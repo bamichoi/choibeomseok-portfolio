@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import Sidemenu from "../sidemenu";
-import Header from "../header";
 import Toast from "../toast";
 
 const Layout = () => {
