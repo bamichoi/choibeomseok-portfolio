@@ -46,4 +46,5 @@ const TaskTitle = styled.div`
 const Description = styled.div`
   font-size: 1rem;
   color: inherit;
+  font-weight: lighter;
 `;
