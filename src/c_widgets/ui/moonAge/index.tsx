@@ -6,13 +6,11 @@ const MoonAge = () => {
   const [lunAge, setLunAge] = useState<number>();
   const getMoonAge = async () => {
     const today = new Date();
-
     const solYear = String(today.getFullYear());
     const solMonth = String(today.getMonth() + 1).padStart(2, "0");
     const solDay = String(today.getDate()).padStart(2, "0");
 
     const res = await requestMoonAge({ solYear, solMonth, solDay });
-
     const {
       response: {
         body: {
@@ -28,7 +26,7 @@ const MoonAge = () => {
 
   useEffect(() => {
     getMoonAge();
-  });
+  }, []);
 
   return (
     <MoonAgeContainer>
