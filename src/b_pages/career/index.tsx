@@ -55,8 +55,14 @@ const CareerContainer = styled.div`
 `;
 
 const Summary = styled.div`
-  width: 40%;
-  overflow: scroll;
+  width: 45%;
+  overflow: auto;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 `;
 
 const Divider = styled.div`
@@ -66,7 +72,7 @@ const Divider = styled.div`
 `;
 
 const Detail = styled.div`
-  width: 60%;
+  width: 55%;
   padding-left: 40px;
 `;
 
