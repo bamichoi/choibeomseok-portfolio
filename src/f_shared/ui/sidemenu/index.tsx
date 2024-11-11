@@ -50,6 +50,10 @@ const Sidemenu = () => {
     [handleClickMenu]
   );
 
+  const capitalizeFirstLetter = (string: string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+  };
+
   useLayoutEffect(() => {
     if (pathname === "/") {
       setSelelctedMenu("home");
@@ -76,7 +80,7 @@ const Sidemenu = () => {
                 onClick={() => menu.onClick(menu.name)}
                 $isSelected={selectedMenu === menu.name}
               >
-                {menu.name}
+                {capitalizeFirstLetter(menu.name)}
               </Menu>
             </motion.div>
           ))}
