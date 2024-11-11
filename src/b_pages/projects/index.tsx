@@ -27,5 +27,6 @@ const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 8.1rem;
+  padding-top: 6rem;
 `;

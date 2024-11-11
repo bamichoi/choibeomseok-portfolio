@@ -9,7 +9,7 @@ const Title = ({ onClick }: TitleProps) => {
     <TitleContainer onClick={onClick}>
       <Name>Choi Beomseok | 최 범 석</Name>
       <StatusIcon>⭐️</StatusIcon>
-      <Job>frontend developer</Job>
+      <Job>Frontend Developer</Job>
     </TitleContainer>
   );
 };
@@ -17,16 +17,17 @@ const Title = ({ onClick }: TitleProps) => {
 export default Title;
 
 const TitleContainer = styled.div`
-  padding: 20px;
+  padding: 1.2rem;
   color: #9bb7d4;
   border: 2px solid #9bb7d4;
-  width: 240px;
-  height: 240px;
+  width: 15rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   z-index: 1000;
+  font-size: 1rem;
 
   &:hover {
     border: 2px solid white;

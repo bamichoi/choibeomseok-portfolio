@@ -19,7 +19,7 @@ export default TaskDetail;
 const TaskDetailContainer = styled.div``;
 
 const Title = styled.div`
-  font-size: 40px;
+  font-size: 1.8rem;
   color: #9bb7d4;
   font-weight: semibold;
 `;

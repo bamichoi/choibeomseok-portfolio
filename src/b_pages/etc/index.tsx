@@ -12,12 +12,21 @@ const Etc = () => {
     <EtcContainer>
       <AboutGrid>
         <ItemWrapper>
+          <Property>Puppy</Property>
+          <TextWrapper>
+            <SvgWrapper>
+              <PetSVG />
+            </SvgWrapper>
+            <PetName>행복이 (♂, 1살)</PetName>
+          </TextWrapper>
+        </ItemWrapper>
+        <ItemWrapper>
           <Property>Education</Property>
           <DetailWrapper>
             <KnuSVG />
             <TextWrapper>
               <MainText>경북대학교 철학과 졸업</MainText>
-              <SubText>2009.03. - 2017.02.</SubText>
+              <SubText>2009.03 - 2017.02</SubText>
             </TextWrapper>
           </DetailWrapper>
           <DetailWrapper>
@@ -25,7 +34,7 @@ const Etc = () => {
             <TextWrapper>
               <MainText>Università per Stranieri di Perugia</MainText>
               <SubText>Italiano B1 과정 수료</SubText>
-              <SubText>2019.05. - 2019.08.</SubText>
+              <SubText>2019.05 - 2019.08</SubText>
             </TextWrapper>
           </DetailWrapper>
           <DetailWrapper>
@@ -33,7 +42,7 @@ const Etc = () => {
             <TextWrapper>
               <MainText>Accademia Belle Arti di Roma</MainText>
               <SubText>Teorie e Tecniche dell'Audiovisivo 중퇴</SubText>
-              <SubText>2018.08. - 2020.02.</SubText>
+              <SubText>2018.08 - 2020.02</SubText>
             </TextWrapper>
           </DetailWrapper>
         </ItemWrapper>
@@ -45,7 +54,7 @@ const Etc = () => {
               <MainText>Baby3</MainText>
               <SubText>Neflix Original Series</SubText>
               <SubText>단역, 호텔 투숙객 커플 남자1 역</SubText>
-              <SubText>2019.09.</SubText>
+              <SubText>2019.09</SubText>
             </TextWrapper>
           </DetailWrapper>
           <DetailWrapper>
@@ -54,7 +63,7 @@ const Etc = () => {
               <MainText>Novecento</MainText>
               <SubText>7th AS Film Festival 단편 경쟁작</SubText>
               <SubText>조연, 한국인 룸메이트 역</SubText>
-              <SubText>2019.12.</SubText>
+              <SubText>2019.12</SubText>
             </TextWrapper>
           </DetailWrapper>
           <DetailWrapper>
@@ -63,18 +72,9 @@ const Etc = () => {
               <MainText>Turbe</MainText>
               <SubText>Episodio #12: Esotico</SubText>
               <SubText>주연, Bami 역</SubText>
-              <SubText>2019.05.</SubText>
+              <SubText>2019.05</SubText>
             </TextWrapper>
           </DetailWrapper>
-        </ItemWrapper>
-        <ItemWrapper>
-          <Property>Puppy</Property>
-          <TextWrapper>
-            <SvgWrapper>
-              <PetSVG />
-            </SvgWrapper>
-            <PetName>행복이 (♂, 1살)</PetName>
-          </TextWrapper>
         </ItemWrapper>
       </AboutGrid>
     </EtcContainer>
@@ -93,8 +93,8 @@ const EtcContainer = styled.div`
 
 const AboutGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 1x3 그리드 설정 */
-  gap: 120px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem;
 `;
 
 const ItemWrapper = styled.div`
@@ -104,7 +104,7 @@ const ItemWrapper = styled.div`
 `;
 
 const Property = styled.div`
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #9bb7d4;
   margin-bottom: 50px;
 `;
@@ -122,13 +122,13 @@ const TextWrapper = styled.div`
 `;
 
 const MainText = styled.div`
-  font-size: 15px;
+  font-size: 1rem;
   color: #9bb7d4;
   font-weight: semibold;
 `;
 
 const SubText = styled.div`
-  font-size: 12px;
+  font-size: 0.85rem;
   color: #9bb7d4;
 `;
 
@@ -140,7 +140,7 @@ const SvgWrapper = styled.div`
 `;
 
 const PetName = styled.div`
-  font-size: 12px;
+  font-size: 0.85rem;
   color: #9bb7d4;
   text-align: center;
   width: 214px;

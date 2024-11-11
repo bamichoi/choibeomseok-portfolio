@@ -31,6 +31,7 @@ const ProjectSlide = ({ onClick }: SlideProps) => {
       }}
       loop={true}
       modules={[Autoplay]}
+      title="드래그하여 넘겨보기"
     >
       {projects.map(({ id, title, fullLogo }) => (
         <StyledSwiperSlide key={id} onClick={() => onClick(id)}>
@@ -44,13 +45,12 @@ const ProjectSlide = ({ onClick }: SlideProps) => {
 export default ProjectSlide;
 
 const StyledSwiper = styled(Swiper)`
-  width: 300px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: visible;
   box-sizing: border-box;
-  padding-right: 100px;
 
   .swiper-wrapper {
     transition-timing-function: linear;

@@ -96,17 +96,17 @@ export default Sidemenu;
 const SidemenuContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 20rem;
   height: 100vh;
-  padding: 40px;
+  padding: 1.1rem;
   justify-content: space-between;
   gap: 20px;
 `;
 
 const Menu = styled.div<{ $isSelected: boolean }>`
   color: ${({ $isSelected }) => ($isSelected ? "white" : "#9bb7d4;")};
-  font-size: ${({ $isSelected }) => ($isSelected ? "40px" : "20px")};
-  padding: 20px;
+  font-size: ${({ $isSelected }) => ($isSelected ? "2.2rem" : "1.1rem")};
+  padding: 1.1rem;
   cursor: pointer;
   border-top: ${({ $isSelected }) =>
     $isSelected ? "2px solid #9bb7d4" : "none"};

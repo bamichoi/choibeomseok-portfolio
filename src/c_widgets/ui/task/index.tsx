@@ -38,12 +38,12 @@ const TaskContainer = styled.div<{ $isSelected: boolean }>`
 `;
 
 const TaskTitle = styled.div`
-  font-size: 20px;
+  font-size: 1.2rem;
   color: inherit;
   font-weight: semibold;
 `;
 
 const Description = styled.div`
-  font-size: 14px;
+  font-size: 1rem;
   color: inherit;
 `;

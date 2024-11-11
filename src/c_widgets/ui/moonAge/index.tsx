@@ -31,7 +31,7 @@ const MoonAge = () => {
   return (
     <MoonAgeContainer>
       <MoonAgeValue>{lunAge}</MoonAgeValue>
-      {lunAge && <Moon $lunAge={lunAge} />}
+      {lunAge && <Moon $lunAge={lunAge} title="달의 위상" />}
     </MoonAgeContainer>
   );
 };
@@ -51,6 +51,7 @@ const Moon = styled.div<{ $lunAge: number }>`
   background-color: #1c4e89;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 
   &::before {
     content: "";

@@ -32,7 +32,7 @@ const PreviewSlide = ({ images }: PreviewSlideProps) => {
     >
       {images?.map((imageSrc) => (
         <StyledSwiperSlide onClick={() => handleImageClick(imageSrc)}>
-          <Image src={imageSrc} />
+          <Image src={imageSrc} title="클릭하여 크게보기" />
         </StyledSwiperSlide>
       ))}
     </StyledSwiper>
@@ -44,8 +44,8 @@ const PreviewSlide = ({ images }: PreviewSlideProps) => {
 export default PreviewSlide;
 
 const StyledSwiper = styled(Swiper)`
-  width: 440px;
-  height: 280px;
+  width: 26rem;
+  height: 15rem;
   position: relative;
 
   .swiper-button-prev {
@@ -73,20 +73,20 @@ const StyledSwiperSlide = styled(SwiperSlide)`
 `;
 
 const Image = styled.img`
-  width: 400px;
-  height: 280px;
+  width: 23rem;
+  height: 15rem;
   object-fit: cover;
   object-position: 0 0;
   border-radius: 10px;
 
   &:hover {
-    border: 1px solid #9bb7d4;
+    border: 4px solid #9bb7d4;
   }
 `;
 
 const NotExistImage = styled.div`
-  width: 400px;
-  height: 280px;
+  width: 23rem;
+  height: 15rem;
   background-color: #9bb7d4;
   color: #1c4e89;
   border-radius: 10px;

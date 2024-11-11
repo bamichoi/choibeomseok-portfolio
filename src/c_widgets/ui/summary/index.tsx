@@ -59,8 +59,6 @@ export default Summary;
 const SummaryContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 100px;
-  padding-top: 80px;
 `;
 
 const PreviewSlideWrapper = styled.div`
@@ -78,12 +76,12 @@ const TitleWrapper = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 3rem;
+  height: 3rem;
 `;
 
 const Title = styled.div`
-  font-size: 60px;
+  font-size: 3rem;
   color: #9bb7d4;
   font-weight: bold;
   display: flex;
@@ -92,7 +90,7 @@ const Title = styled.div`
 `;
 
 const Subtitle = styled.div`
-  font-size: 20px;
+  font-size: 1.1rem;
   color: #9bb7d4;
   font-weight: semibold;
   margin-bottom: 50px;
@@ -106,7 +104,7 @@ const Contents = styled.div`
 `;
 
 const PropertyText = styled.div`
-  font-size: 18px;
+  font-size: 1rem;
   color: #9bb7d4;
   font-weight: semibold;
 `;
@@ -117,21 +115,21 @@ const Stacks = styled.div`
 `;
 
 const StackImage = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 2rem;
+  height: 2rem;
 `;
 
 const DetailBtn = styled.div`
   cursor: pointer;
-  width: 100px;
-  height: 40px;
-  padding: 10px;
+  width: 6rem;
+  height: 3rem;
   background-color: #9bb7d4;
   color: #1c4e89;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1rem;
 
   &:hover {
     color: white;
@@ -145,7 +143,7 @@ const PropertyWrapper = styled.div`
 `;
 
 const Date = styled.div`
-  font-size: 16px;
+  font-size: 1rem;
   color: #9bb7d4;
   font-weight: medium;
 `;
@@ -157,13 +155,14 @@ const BtnWraper = styled.div`
 `;
 
 const Description = styled.div`
-  font-size: 16px;
+  font-size: 1rem;
   height: fit-content;
   color: #9bb7d4;
   font-weight: medium;
   margin-top: 40px;
   width: 700px;
-  line-height: 140%;
+  line-height: 150%;
+  margin-bottom: 0.5rem;
 `;
 
 const SiteLinkBtn = styled.div`
@@ -176,7 +175,7 @@ const SiteLinkBtn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: lighter;
 
   &:hover {

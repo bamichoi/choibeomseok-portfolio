@@ -20,7 +20,7 @@ const Career = () => {
           </LogoWrapper>
           <TextWrapper>
             <Title>TmaxAI</Title>
-            <Period>2022.10. - 재직중</Period>
+            <Period>2022.10 - 재직중</Period>
           </TextWrapper>
         </TitleWrapper>
         <Tasks>
@@ -50,8 +50,8 @@ const CareerContainer = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 120px;
-  padding-top: 100px;
+  padding: 8.1rem;
+  padding-top: 6rem;
 `;
 
 const Summary = styled.div`
@@ -73,7 +73,7 @@ const Divider = styled.div`
 
 const Detail = styled.div`
   width: 55%;
-  padding-left: 40px;
+  padding-left: 2.5rem;
 `;
 
 const TitleWrapper = styled.div`
@@ -81,8 +81,8 @@ const TitleWrapper = styled.div`
   height: fit-content;
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 80px;
+  gap: 18px;
+  margin-bottom: 2rem;
 `;
 
 const TextWrapper = styled.div`
@@ -92,13 +92,13 @@ const TextWrapper = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 20px;
+  font-size: 1.3rem;
   color: #9bb7d4;
   font-weight: semibold;
 `;
 
 const Period = styled.div`
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #9bb7d4;
   font-weight: lighter;
 `;
@@ -108,5 +108,5 @@ const LogoWrapper = styled.div``;
 const Tasks = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
 `;
