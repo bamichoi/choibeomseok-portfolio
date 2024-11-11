@@ -2,9 +2,10 @@ import styled from "styled-components";
 import ProjectSlide from "@/c_widgets/ui/projectSlide";
 import { useState } from "react";
 import Summary from "@/c_widgets/ui/summary";
+import ProjectList from "@/c_widgets/ui/projectList";
 
 const Projects = () => {
-  const [selectedProjectId, setSelectedProjectId] = useState<number>(1);
+  const [selectedProjectId, setSelectedProjectId] = useState<number>();
 
   const handleSlideClick = (id: number) => {
     setSelectedProjectId(id);
@@ -12,7 +13,11 @@ const Projects = () => {
 
   return (
     <ProjectsContainer>
-      <Summary selectedProjectId={selectedProjectId} />
+      {selectedProjectId ? (
+        <Summary selectedProjectId={selectedProjectId} />
+      ) : (
+        <ProjectList onClick={handleSlideClick} />
+      )}
       <ProjectSlide onClick={handleSlideClick} />
     </ProjectsContainer>
   );
