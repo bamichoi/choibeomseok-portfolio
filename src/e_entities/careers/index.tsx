@@ -61,7 +61,7 @@ const tasks = [
     summary: {
       taskTitle: "NLP 모델 테스트 클라이언트 개발",
       description:
-        "자사 지식 관계 플랫폼(KRP)에 활용 중인 NLP 모델 테스트 페이지",
+        "자사 지식 관계 플랫폼(KRP)에 활용 중인 NLP 모델 테스트 페이지 개발",
     },
     detail: {},
   },
