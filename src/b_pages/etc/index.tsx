@@ -33,7 +33,7 @@ const Etc = () => {
             <TextWrapper>
               <MainText>Accademia Belle Arti di Roma</MainText>
               <SubText>Teorie e Tecniche dell'Audiovisivo 중퇴</SubText>
-              <SubText>2019.05. - 2019.08.</SubText>
+              <SubText>2018.08. - 2020.2.</SubText>
             </TextWrapper>
           </DetailWrapper>
         </ItemWrapper>
