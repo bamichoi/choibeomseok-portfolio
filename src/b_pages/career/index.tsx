@@ -20,7 +20,7 @@ const Career = () => {
           </LogoWrapper>
           <TextWrapper>
             <Title>TmaxAI</Title>
-            <Period>2022.10.4 ~ 재직중</Period>
+            <Period>2022.10. - 재직중</Period>
           </TextWrapper>
         </TitleWrapper>
         <Tasks>

@@ -54,7 +54,7 @@ const Etc = () => {
               <MainText>Novecento</MainText>
               <SubText>7th AS Film Festival 단편 경쟁작</SubText>
               <SubText>조연, 한국인 룸메이트 역</SubText>
-              <SubText>2019. 12.</SubText>
+              <SubText>2019.12.</SubText>
             </TextWrapper>
           </DetailWrapper>
           <DetailWrapper>
