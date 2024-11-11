@@ -7,7 +7,7 @@ interface TitleProps {
 const Title = ({ onClick }: TitleProps) => {
   return (
     <TitleContainer onClick={onClick}>
-      <Name>choi beomseok 崔 範 錫</Name>
+      <Name>choi beomseok | 최 범 석</Name>
       <StatusIcon>⭐️</StatusIcon>
       <Job>frontend developer</Job>
     </TitleContainer>
