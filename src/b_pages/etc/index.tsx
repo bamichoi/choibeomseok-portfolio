@@ -12,7 +12,7 @@ const Etc = () => {
     <EtcContainer>
       <AboutGrid>
         <ItemWrapper>
-          <Property>education</Property>
+          <Property>Education</Property>
           <DetailWrapper>
             <KnuSVG />
             <TextWrapper>
@@ -38,7 +38,7 @@ const Etc = () => {
           </DetailWrapper>
         </ItemWrapper>
         <ItemWrapper>
-          <Property>casting </Property>
+          <Property>Casting </Property>
           <DetailWrapper>
             <Baby3SVG />
             <TextWrapper>
@@ -68,7 +68,7 @@ const Etc = () => {
           </DetailWrapper>
         </ItemWrapper>
         <ItemWrapper>
-          <Property>puppy</Property>
+          <Property>Puppy</Property>
           <TextWrapper>
             <SvgWrapper>
               <PetSVG />
