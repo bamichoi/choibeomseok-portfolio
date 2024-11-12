@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ProjectSlide from "@/c_widgets/ui/projectSlide";
 import { useState } from "react";
-import Summary from "@/c_widgets/ui/summary";
+import Summary from "@/c_widgets/ui/projectSummary";
 import ProjectList from "@/c_widgets/ui/projectList";
 
 const Projects = () => {

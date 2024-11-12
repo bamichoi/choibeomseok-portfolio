@@ -1,7 +1,12 @@
+import ResearchList from "@/c_widgets/ui/researchList";
 import styled from "styled-components";
 
 const Research = () => {
-  return <ResearchContainer>Coming soon</ResearchContainer>;
+  return (
+    <ResearchContainer>
+      <ResearchList />
+    </ResearchContainer>
+  );
 };
 
 export default Research;

@@ -1,31 +1,34 @@
 import styled from "styled-components";
 
-interface TaskProps {
+interface CareerProjectProps {
   id: number;
-  taskTitle: string;
+  projectTitle: string;
   description: string;
   isSelected: boolean;
   onClick: (id: number) => void;
 }
 
-const Task = ({
+const CareerProject = ({
   id,
-  taskTitle,
+  projectTitle,
   description,
   isSelected,
   onClick,
-}: TaskProps) => {
+}: CareerProjectProps) => {
   return (
-    <TaskContainer onClick={() => onClick(id)} $isSelected={isSelected}>
-      <TaskTitle>{taskTitle}</TaskTitle>
+    <CareerProjectContainer
+      onClick={() => onClick(id)}
+      $isSelected={isSelected}
+    >
+      <TaskTitle>{projectTitle}</TaskTitle>
       <Description>-{description}</Description>
-    </TaskContainer>
+    </CareerProjectContainer>
   );
 };
 
-export default Task;
+export default CareerProject;
 
-const TaskContainer = styled.div<{ $isSelected: boolean }>`
+const CareerProjectContainer = styled.div<{ $isSelected: boolean }>`
   cursor: pointer;
   color: ${({ $isSelected }) => ($isSelected ? "white" : "#9bb7d4")};
   display: flex;

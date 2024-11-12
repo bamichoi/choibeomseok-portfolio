@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import TmaxSVG from "@shared/assets/images/careerLogo/tmaxLogo.svg?react";
 import { useState } from "react";
-import tasks from "@/e_entities/careers";
-import Task from "@/c_widgets/ui/task";
+import careerProjects from "@/e_entities/careers";
+import CareerProject from "@/c_widgets/ui/careerProject";
 import TaskDetail from "@/c_widgets/ui/taskDetail";
 
 const Career = () => {
-  const [selectedTaskId, setSelectedTaskId] = useState(1);
+  const [selectedProjectId, setSelectedProjectId] = useState(1);
 
-  const handleTaskClick = (id: number) => {
-    setSelectedTaskId(id);
+  const handleProjectClick = (id: number) => {
+    setSelectedProjectId(id);
   };
   return (
     <CareerContainer>
@@ -24,21 +24,23 @@ const Career = () => {
           </TextWrapper>
         </TitleWrapper>
         <Tasks>
-          {tasks.map(({ id, summary: { taskTitle, description } }) => (
-            <Task
-              key={id}
-              id={id}
-              taskTitle={taskTitle}
-              description={description}
-              onClick={handleTaskClick}
-              isSelected={id === selectedTaskId}
-            />
-          ))}
+          {careerProjects.map(
+            ({ id, summary: { projectTitle, description } }) => (
+              <CareerProject
+                key={id}
+                id={id}
+                projectTitle={projectTitle}
+                description={description}
+                onClick={handleProjectClick}
+                isSelected={id === selectedProjectId}
+              />
+            )
+          )}
         </Tasks>
       </Summary>
       <Divider />
       <Detail>
-        <TaskDetail selectedTaskId={selectedTaskId} />
+        <TaskDetail selectedProjectId={selectedProjectId} />
       </Detail>
     </CareerContainer>
   );

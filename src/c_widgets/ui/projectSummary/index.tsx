@@ -2,11 +2,11 @@ import projects from "@entities/projects";
 import styled from "styled-components";
 import PreviewSlide from "../previewSlide/previewSlide";
 
-interface SummaryProps {
+interface ProjectSummaryProps {
   selectedProjectId: number;
 }
 
-const Summary = ({ selectedProjectId }: SummaryProps) => {
+const ProjectSummary = ({ selectedProjectId }: ProjectSummaryProps) => {
   const project = projects.find((project) => project.id === selectedProjectId);
 
   const handleSiteLinkClick = () => {
@@ -16,7 +16,7 @@ const Summary = ({ selectedProjectId }: SummaryProps) => {
   };
 
   return (
-    <SummaryContainer>
+    <ProjectSummaryContainer>
       <TitleWrapper>
         <Logo src={project?.logo} />
         <Title>
@@ -50,13 +50,13 @@ const Summary = ({ selectedProjectId }: SummaryProps) => {
       <BtnWraper>
         <DetailBtn>자세히</DetailBtn>
       </BtnWraper>
-    </SummaryContainer>
+    </ProjectSummaryContainer>
   );
 };
 
-export default Summary;
+export default ProjectSummary;
 
-const SummaryContainer = styled.div`
+const ProjectSummaryContainer = styled.div`
   width: 100%;
   height: 100%;
 `;
