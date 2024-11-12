@@ -54,6 +54,15 @@ const careerProjects = [
   {
     id: 7,
     summary: {
+      projectTitle: "AI 모델 중앙 관리용 백오피스 개발",
+      description:
+        "사내 AI 모델 관리 및 테스트를 위한 백오피스 클라이언트 개발",
+    },
+    tasks: [],
+  },
+  {
+    id: 8,
+    summary: {
       projectTitle: "Frontend 팀내 CI/CD 환경 구축",
       description:
         "팀내 배포 자동화 목적의 Jenkins를 활용한 CI/CD 파이프라인 구축",
@@ -61,7 +70,7 @@ const careerProjects = [
     tasks: [],
   },
   {
-    id: 8,
+    id: 9,
     summary: {
       projectTitle: "NLP 모델 테스트 클라이언트 개발",
       description:

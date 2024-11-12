@@ -1,4 +1,4 @@
-import researchs from "@/e_entities/researchs";
+import researchs from "@/e_entities/research";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 

@@ -6,7 +6,7 @@ import CareerProject from "@/c_widgets/ui/careerProject";
 import TaskDetail from "@/c_widgets/ui/taskDetail";
 
 const Career = () => {
-  const [selectedProjectId, setSelectedProjectId] = useState(1);
+  const [selectedProjectId, setSelectedProjectId] = useState(3);
 
   const handleProjectClick = (id: number) => {
     setSelectedProjectId(id);
