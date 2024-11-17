@@ -8,7 +8,7 @@ interface ProjectListProps {
 const ProjectList = ({ onClick }: ProjectListProps) => {
   return (
     <ProjectListContainer>
-      <Title>Project List</Title>
+      <Title>Side Project List</Title>
       <Projects>
         {projects.slice(0, 5).map((project) => (
           <Project key={project.id} onClick={() => onClick(project.id)}>
