@@ -60,7 +60,7 @@ const projects = [
     logo: StagecueLogo,
     fullLogo: StagecueFullLogo,
     images: [],
-    subtitle: "극단-배우 단원모집 중계 플랫폼",
+    subtitle: "극단-배우 단원모집 중개 플랫폼",
     stacks: [
       ReactSVG,
       TypescriptSVG,

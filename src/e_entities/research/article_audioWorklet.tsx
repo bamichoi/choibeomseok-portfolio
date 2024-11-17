@@ -19,7 +19,7 @@ const ArticleAudioWorklet = () => {
             \nAudioWorklet은 AudioWorkletNode라는 워커 노드를 만듭니다. AudioWorkletNode는 AudioWorkletProcessor로 작업을 수행하게 되는데
             \n개발자는 이 AudioWorkletProcessor에 입력된 음성 데이터로 어떤 처리를 할지 직접 작성할 수 있습니다.
             \n제가 수행한 프로젝트에서는 Processor가 수행할 일은 1) 입력된 데이터를 PCM16로 변환 2) 변환된 PCM16데이터를 Chunking하여 서버로 전송하는 것입니다.
-            \n아래는 input 입력부터 최종 output 까지의 데이터 흐름을 간략화한 것입니다.`}
+            \n아래는 input 입력부터 최종 output 까지의 처리 흐름을 모식화한 것입니다.`}
           </Paragraph>
           <DataFlowImage src={Image1} />
         </ParagraphWrapper>
@@ -34,9 +34,7 @@ const ArticleAudioWorklet = () => {
             \nAudioWorkletProcessor에서 이렇게 데이터가 처리된 뒤에는 다시 AudioWorkletNode으로 전달해주어야 컴포넌트 단에서 처리된 데이터를 사용할 수 있습니다.
             \nAudioWorkletProcessor와 AudioWorkletNode는 port라는 객체를 공통적으로 가지는데 이 port를 통해 데이터를 주고 받을 수 있습니다.
             \nport에는 onMessage 이벤트와 postMessage 메서드가 있습니다. onMessage로 특정한 메세지에 반응하는 이벤트를 바인딩해놓고 postMessage로 onMessage를 트리거합니다.
-            \n한쪽에서 postMessage에 데이터를 담아보내면 반대쪽에서는 발생한 이벤트를 통해 데이터를 받을 수 있습니다.
-            \n아래는 STT Recorder 컴포넌트에서 AudioWorkletNode의 port에 미리 이벤트를 등록하고, 
-            \nAudioWorkletProcessor의 process 메서드 내에서 처리된 오디오 데이터를 정의된 postAudioData 함수에 전달하여 postMessage로 보내는 모습입니다. `}
+            \n한쪽에서 postMessage에 데이터를 담아보내면 반대쪽에서는 발생한 이벤트를 통해 데이터를 받을 수 있습니다.`}
           </Paragraph>
           <ImageWrapper>
             <CodeImage src={Image2} />
@@ -49,10 +47,10 @@ const ArticleAudioWorklet = () => {
             {`이 STT Recorder에는 모델 부하를 방지하기 위한 자동 정지 기능이 포함되어 있습니다.
             \n5초간 사용이 없으면 녹음 상태는 자동으로 종료 되어야 했는데, 사용자의 음성 입력 디바이스로는 여러 소리가 다 담겨 들어오기 때문에
             \n일반적인 케이스에서 녹음 상태에서 사용자가 아무 말을 하지 않더라도 입력 디바이스로부터는 어떤식으로든 데이터가 들어오게 되어있습니다.
-            \n그래서 들어오는 음성의 주파수를 분석하여 기준 값보다 작으면 사용자의 발화가 없다고 추정하고 녹음을 자동종료하기로 했습니다.
-            \nAudioContext에서 AnalyerNode를 생성하고 오디오 스트림 데이터를 받아 getByteFrequencyData 메서드로 현재 오디오 데이터의 주파수 평균 값을 얻어냈습니다.
-            \n그리고 이 데이터를 5초간 쌓은 뒤 setInterval로 5초마다 축적된 주파수 값과 기준 값을 비교하는 작업을 실행했습니다.
-            \n아래는 AnalyserNode를 포함한 STT Recorder 전체의 큰 흐름의 모식도와 AnalyerNode를 통해 주파수 값을 얻는 함수입니다. `}
+            \n그래서 들어오는 음성의 주파수를 분석하여 5초 동안의 데시벨 평균이 기준 값보다 작으면 사용자의 발화가 없다고 추정하고 녹음을 자동종료하기로 했습니다.
+            \nAnalyserNode는 실시간 주파수 정보를 표현하는 Node로 AudioContext의 CreateAnalyser 메서드를 사용하여 생성합니다.
+            \n그리고 frequencyBinCount로 현재 주파수 값이 실시간으로 재생되도록 한 뒤에 getByteFrequencyData 메서드로 주파수 데이터 값을 복사하여 데시벨 평균을 구하는데 사용했습니다.
+            `}
           </Paragraph>
           <Paragraph></Paragraph>
           <ImageWrapper>
