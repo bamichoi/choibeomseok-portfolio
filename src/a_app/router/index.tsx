@@ -6,7 +6,6 @@ import Projects from "@/b_pages/projects";
 import Research from "@/b_pages/research";
 import Layout from "@/f_shared/ui/layout";
 import { createBrowserRouter } from "react-router-dom";
-import Article from "@/b_pages/article";
 
 const router = createBrowserRouter([
   {
@@ -30,14 +29,9 @@ const router = createBrowserRouter([
         element: <Research />,
       },
       {
-        path: "/research/articles/:id",
-        element: <Article />,
-      },
-      {
         path: "/contact",
         element: <Contact />,
       },
-
       {
         path: "/etc",
         element: <Etc />,

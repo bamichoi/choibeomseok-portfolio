@@ -1,12 +1,9 @@
 import researchs from "@/e_entities/research";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const ResearchList = () => {
-  const navigate = useNavigate();
-
-  const handleArticleClick = (id: number) => {
-    navigate(`/research/articles/${id}`);
+  const handleArticleClick = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -16,7 +13,7 @@ const ResearchList = () => {
         {researchs.map((article) => (
           <Article
             key={article.id}
-            onClick={() => handleArticleClick(article.id)}
+            onClick={() => handleArticleClick(article.url)}
           >
             <ArticleTitle>{article.title}</ArticleTitle>
           </Article>

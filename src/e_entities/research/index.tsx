@@ -1,11 +1,10 @@
-import ArticleAudioWorklet from "./article_audioWorklet";
-
 const research = [
   {
     id: 1,
     projectId: 3,
-    title: "AudioWorklet을 활용한 Realtime STT 구현과 데이터 처리",
-    article: <ArticleAudioWorklet />,
+    title:
+      "AudioWorklet을 이용한 실시간 Audio Data Processing과 실시간 STT 서비스에의 활용",
+    url: "https://buttoned-garage-49e.notion.site/AudioWorklet-Audio-Data-Processing-142b67f2506a8048990ff8991ceed3ec?pvs=73",
   },
 ];
 
