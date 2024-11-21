@@ -24,6 +24,14 @@ const MoonAge = () => {
     setLunAge(lunAge);
   };
 
+  const handleMoonClick = () => {
+    window.open(
+      "https://starwalk.space/ko/moon-calendar",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   useEffect(() => {
     getMoonAge();
   }, []);
@@ -31,7 +39,9 @@ const MoonAge = () => {
   return (
     <MoonAgeContainer>
       <MoonAgeValue>{lunAge}</MoonAgeValue>
-      {lunAge && <Moon $lunAge={lunAge} title="달의 위상" />}
+      {lunAge && (
+        <Moon $lunAge={lunAge} title="달의 위상" onClick={handleMoonClick} />
+      )}
     </MoonAgeContainer>
   );
 };
