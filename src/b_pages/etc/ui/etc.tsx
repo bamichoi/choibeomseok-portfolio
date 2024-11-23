@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import KnuSVG from "@shared/assets/images/univLogo/knu.svg?react";
-import PerugiaSVG from "@shared/assets/images/univLogo/perugia.svg?react";
-import RomaSVG from "@shared/assets/images/univLogo/roma.svg?react";
-import Baby3SVG from "@shared/assets/images/castingLogo/baby.svg?react";
-import TurbeSVG from "@shared/assets/images/castingLogo/turbe.svg?react";
-import NovecentoSVG from "@shared/assets/images/castingLogo/novecento.svg?react";
-import PetSVG from "@shared/assets/images/hangboghi.svg?react";
+import KnuSVG from "@shared/ui/assets/images/univLogo/knu.svg?react";
+import PerugiaSVG from "@shared/ui/assets/images/univLogo/perugia.svg?react";
+import RomaSVG from "@shared/ui/assets/images/univLogo/roma.svg?react";
+import Baby3SVG from "@shared/ui/assets/images/castingLogo/baby.svg?react";
+import TurbeSVG from "@shared/ui/assets/images/castingLogo/turbe.svg?react";
+import NovecentoSVG from "@shared/ui/assets/images/castingLogo/novecento.svg?react";
+import PetSVG from "@shared/ui/assets/images/hangboghi.svg?react";
 
 const Etc = () => {
   return (

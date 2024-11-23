@@ -1,57 +1,57 @@
 /* stack icons */
-import ReactSVG from "@shared/assets/images/stackLogo/react.svg";
-import ReactHookFormSVG from "@shared/assets/images/stackLogo/react-hook-form.svg";
-import ReactQuerySVG from "@shared/assets/images/stackLogo/react-query.svg";
-import ViteSVG from "@shared/assets/images/stackLogo/vite.svg";
-import TypescriptSVG from "@shared/assets/images/stackLogo/typescript.svg";
-import SwiperSVG from "@shared/assets/images/stackLogo/swiper.png";
-// import NextjsSVG from "@shared/assets/images/stackLogo/nextjs.svg";
-import DjangoSVG from "@shared/assets/images/stackLogo/django.svg";
-import MobxSVG from "@shared/assets/images/stackLogo/mobx.svg";
-import RecoilSVG from "@shared/assets/images/stackLogo/recoil.svg";
-import JavascriptSVG from "@shared/assets/images/stackLogo/javascript.svg";
-import FfmpegwasmSVG from "@shared/assets/images/stackLogo/ffmpeg-wasm.png";
-import ScssSVG from "@shared/assets/images/stackLogo/scss.svg";
-import StyledComponentsSVG from "@shared/assets/images/stackLogo/styled-components.png";
-import TailwindcssSVG from "@shared/assets/images/stackLogo/tailwindcss.svg";
-import ReduxSVG from "@shared/assets/images/stackLogo/redux.svg";
-import NodejsSVG from "@shared/assets/images/stackLogo/nodejs.svg";
-import ExpressSVG from "@shared/assets/images/stackLogo/express.png";
+import ReactSVG from "@shared/ui/assets/images/stackLogo/react.svg";
+import ReactHookFormSVG from "@shared/ui/assets/images/stackLogo/react-hook-form.svg";
+import ReactQuerySVG from "@shared/ui/assets/images/stackLogo/react-query.svg";
+import ViteSVG from "@shared/ui/assets/images/stackLogo/vite.svg";
+import TypescriptSVG from "@shared/ui/assets/images/stackLogo/typescript.svg";
+import SwiperSVG from "@shared/ui/assets/images/stackLogo/swiper.png";
+// import NextjsSVG from "@shared/ui/assets/images/stackLogo/nextjs.svg";
+import DjangoSVG from "@shared/ui/assets/images/stackLogo/django.svg";
+import MobxSVG from "@shared/ui/assets/images/stackLogo/mobx.svg";
+import RecoilSVG from "@shared/ui/assets/images/stackLogo/recoil.svg";
+import JavascriptSVG from "@shared/ui/assets/images/stackLogo/javascript.svg";
+import FfmpegwasmSVG from "@shared/ui/assets/images/stackLogo/ffmpeg-wasm.png";
+import ScssSVG from "@shared/ui/assets/images/stackLogo/scss.svg";
+import StyledComponentsSVG from "@shared/ui/assets/images/stackLogo/styled-components.png";
+import TailwindcssSVG from "@shared/ui/assets/images/stackLogo/tailwindcss.svg";
+import ReduxSVG from "@shared/ui/assets/images/stackLogo/redux.svg";
+import NodejsSVG from "@shared/ui/assets/images/stackLogo/nodejs.svg";
+import ExpressSVG from "@shared/ui/assets/images/stackLogo/express.png";
 
 /* preview screenshot */
 
-import Cineacca1SVG from "@shared/assets/images/preview/cineacca.jpg";
-import Cineacca2SVG from "@shared/assets/images/preview/cineacca_2.jpg";
-import Cineacca3SVG from "@shared/assets/images/preview/cineacca_3.jpg";
-import Cineacca4SVG from "@shared/assets/images/preview/cineacca_4.jpg";
+import Cineacca1SVG from "@shared/ui/assets/images/preview/cineacca.jpg";
+import Cineacca2SVG from "@shared/ui/assets/images/preview/cineacca_2.jpg";
+import Cineacca3SVG from "@shared/ui/assets/images/preview/cineacca_3.jpg";
+import Cineacca4SVG from "@shared/ui/assets/images/preview/cineacca_4.jpg";
 
-import Hellokorea1SVG from "@shared/assets/images/preview/hellokorea.png";
-import Hellokorea2SVG from "@shared/assets/images/preview/hellokorea2.png";
-import Hellokorea3SVG from "@shared/assets/images/preview/hellokorea3.png";
-import Hellokorea4SVG from "@shared/assets/images/preview/hellokorea4.png";
+import Hellokorea1SVG from "@shared/ui/assets/images/preview/hellokorea.png";
+import Hellokorea2SVG from "@shared/ui/assets/images/preview/hellokorea2.png";
+import Hellokorea3SVG from "@shared/ui/assets/images/preview/hellokorea3.png";
+import Hellokorea4SVG from "@shared/ui/assets/images/preview/hellokorea4.png";
 
-import FridayT1SVG from "@shared/assets/images/preview/fridayT.png";
-import FridayT2SVG from "@shared/assets/images/preview/fridayT2.png";
-import FridayT3SVG from "@shared/assets/images/preview/fridayT3.png";
+import FridayT1SVG from "@shared/ui/assets/images/preview/fridayT.png";
+import FridayT2SVG from "@shared/ui/assets/images/preview/fridayT2.png";
+import FridayT3SVG from "@shared/ui/assets/images/preview/fridayT3.png";
 
-import BoardMe1PNG from "@shared/assets/images/preview/boardme.png";
-import BoardMe2PNG from "@shared/assets/images/preview/boardme2.png";
-import BoardMe3PNG from "@shared/assets/images/preview/boardme3.png";
-import BoardMe4PNG from "@shared/assets/images/preview/boardme4.png";
-import BoardMe5PNG from "@shared/assets/images/preview/boardme5.png";
-import BoardMe6PNG from "@shared/assets/images/preview/boardme6.png";
+import BoardMe1PNG from "@shared/ui/assets/images/preview/boardme.png";
+import BoardMe2PNG from "@shared/ui/assets/images/preview/boardme2.png";
+import BoardMe3PNG from "@shared/ui/assets/images/preview/boardme3.png";
+import BoardMe4PNG from "@shared/ui/assets/images/preview/boardme4.png";
+import BoardMe5PNG from "@shared/ui/assets/images/preview/boardme5.png";
+import BoardMe6PNG from "@shared/ui/assets/images/preview/boardme6.png";
 
 /* project logo */
-import StagecueLogo from "@shared/assets/images/projectLogo/stagecue.svg";
-import StagecueFullLogo from "@shared/assets/images/projectLogo/stagecue_full.svg";
-import FridayTLogo from "@shared/assets/images/projectLogo/fridayT.png";
-import FridayTFullLogo from "@shared/assets/images/projectLogo/fridayT_full.png";
-import BoardmeLogo from "@shared/assets/images/projectLogo/boardme.png";
-import BoardmeFullLogo from "@shared/assets/images/projectLogo/boardme_full.svg";
-import CineaccaLogo from "@shared/assets/images/projectLogo/cineacca.svg";
-import CineaccaFullLogo from "@shared/assets/images/projectLogo/cineacca_full.svg";
-import HellokoreaLogo from "@shared/assets/images/projectLogo/hellokorea.svg";
-import HellokoreaFullLogo from "@shared/assets/images/projectLogo/hellokorea_full.svg";
+import StagecueLogo from "@shared/ui/assets/images/projectLogo/stagecue.svg";
+import StagecueFullLogo from "@shared/ui/assets/images/projectLogo/stagecue_full.svg";
+import FridayTLogo from "@shared/ui/assets/images/projectLogo/fridayT.png";
+import FridayTFullLogo from "@shared/ui/assets/images/projectLogo/fridayT_full.png";
+import BoardmeLogo from "@shared/ui/assets/images/projectLogo/boardme.png";
+import BoardmeFullLogo from "@shared/ui/assets/images/projectLogo/boardme_full.svg";
+import CineaccaLogo from "@shared/ui/assets/images/projectLogo/cineacca.svg";
+import CineaccaFullLogo from "@shared/ui/assets/images/projectLogo/cineacca_full.svg";
+import HellokoreaLogo from "@shared/ui/assets/images/projectLogo/hellokorea.svg";
+import HellokoreaFullLogo from "@shared/ui/assets/images/projectLogo/hellokorea_full.svg";
 
 const projects = [
   {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TmaxSVG from "@shared/assets/images/careerLogo/tmaxLogo.svg?react";
+import TmaxSVG from "@shared/ui/assets/images/careerLogo/tmaxLogo.svg?react";
 import { useState } from "react";
 import careerProjects from "@/e_entities/career/model/careerProjects";
 import CareerProject from "@/c_widgets/career/ui/careerProject";

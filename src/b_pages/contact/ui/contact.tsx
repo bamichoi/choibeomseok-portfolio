@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import GithubSVG from "@shared/assets/icons/github.svg?react";
-import LinkedinSVG from "@shared/assets/icons/linkedin.svg?react";
-import MailSVG from "@shared/assets/icons/mail.svg?react";
+import GithubSVG from "@shared/ui/assets/icons/github.svg?react";
+import LinkedinSVG from "@shared/ui/assets/icons/linkedin.svg?react";
+import MailSVG from "@shared/ui/assets/icons/mail.svg?react";
 import useToastStore from "@/f_shared/model/toastStore";
 
 const Contact = () => {
