@@ -10,7 +10,7 @@ const research = [
     id: 2,
     projectId: 0,
     title:
-      "Feature-Sliced Design(FSD) 아키텍처 개론과 적용의 실제 그리고 고전 아키텍처와의 비교",
+      "Feature-Sliced Design(FSD) 아키텍처의 개념과 적용의 실제 그리고 고전 아키텍처와의 비교",
     url: "https://buttoned-garage-49e.notion.site/Feature-Sliced-Design-FSD-146b67f2506a8036923be7e4d4eabfc1?pvs=4",
   },
 ];
