@@ -1,5 +1,5 @@
 import careerProjects from "@/e_entities/career/model/careerProjects";
-import research from "@/e_entities/research";
+import research from "@/e_entities/research/research";
 import styled from "styled-components";
 
 interface TaskDetailProps {

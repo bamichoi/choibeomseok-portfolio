@@ -1,4 +1,4 @@
-import researchs from "@/e_entities/research";
+import researchs from "@/e_entities/research/research";
 import styled from "styled-components";
 
 const ResearchList = () => {
