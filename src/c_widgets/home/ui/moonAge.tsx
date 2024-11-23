@@ -1,4 +1,4 @@
-import { requestMoonAge } from "@/c_widgets/home/api";
+import { requestMoonAge } from "@/c_widgets/home/api/reqMoonAge";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
