@@ -77,7 +77,9 @@ const careerProjects = [
       description:
         "팀내 배포 자동화 목적의 Jenkins를 활용한 CI/CD 파이프라인 구축",
     },
-    tasks: [],
+    tasks: [
+      "개발 진행 모니터링 및 내부 QA 및 POC 관련 배포 작업의 편의 향상 달성",
+    ],
   },
   {
     id: 8,
