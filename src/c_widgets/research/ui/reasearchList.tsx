@@ -48,6 +48,9 @@ const Articles = styled.div`
 
 const ArticleTitle = styled.div`
   font-weight: lighter;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 0.5px;
 `;
 
 const Article = styled.div`
