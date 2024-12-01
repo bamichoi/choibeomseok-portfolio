@@ -5,7 +5,12 @@ const careerProjects = [
       projectTitle: "HyperChatbot 2.0",
       description: "Rule-base 기반 챗봇 스튜디오 서비스",
     },
-    tasks: [],
+    tasks: [
+      "- Chatflow가 입력된 챗봇의 빌드 및 배포 페이지 개발",
+      "- 빌드 및 배포 버전 관리를 위한 테이블 컴포넌트 개발",
+      "- SWR을 활용한 챗봇 버전 데이터 관리 및 Pagination 개발",
+      "- End-user 채팅 애플리케이션 개발",
+    ],
   },
   {
     id: 2,
