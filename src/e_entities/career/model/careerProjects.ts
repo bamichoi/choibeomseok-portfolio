@@ -60,22 +60,18 @@ const careerProjects = [
   {
     id: 6,
     summary: {
-      projectTitle: "TmaxAI 연구본부 서버 클러스터 구축",
+      projectTitle: "TmaxAI 연구본부 서버 클러스터 구축 및 백오피스 개발",
       description: "사내 AI 모델 관리를 위한 쿠버네티스 클러스터 구축",
     },
-    tasks: [],
+    tasks: [
+      "- 사내 AI 모델 관리를 위한 Kubernetes 클러스터 구축",
+      "- AI 모델 Triton 서버 배포 작업 수행",
+      "- Next.js 기반의 AI 모델 로드 조작 및 테스트용 백오피스 제작",
+      "- STT, TTS 및 OCR 모델 테스트 기능 개발",
+    ],
   },
   {
     id: 7,
-    summary: {
-      projectTitle: "AI 모델 중앙 관리용 백오피스 개발",
-      description:
-        "사내 AI 모델 관리 및 테스트를 위한 백오피스 클라이언트 개발",
-    },
-    tasks: [],
-  },
-  {
-    id: 8,
     summary: {
       projectTitle: "Frontend 팀내 CI/CD 환경 구축",
       description:
@@ -84,13 +80,16 @@ const careerProjects = [
     tasks: [],
   },
   {
-    id: 9,
+    id: 8,
     summary: {
       projectTitle: "NLP 모델 테스트 클라이언트 개발",
       description:
         "자사 지식 관계 플랫폼(KRP)에 활용 중인 NLP 모델 테스트 페이지 개발",
     },
-    tasks: [],
+    tasks: [
+      "- PDF 파싱, 요약 추출 등 파이프라인의 각 단계별 테스트 기능 구현",
+      "- FSD Architecture를 적용한 애플리케이션 개발",
+    ],
   },
 ];
 
