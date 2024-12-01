@@ -75,11 +75,11 @@ const careerProjects = [
     id: 7,
     summary: {
       projectTitle: "Frontend 팀내 CI/CD 환경 구축",
-      description:
-        "팀내 배포 자동화 목적의 Jenkins를 활용한 CI/CD 파이프라인 구축",
+      description: "프론트엔드 배포 자동화를 위한 CI/CD 구축",
     },
     tasks: [
-      "개발 진행 모니터링 및 내부 QA 및 POC 관련 배포 작업의 편의 향상 달성",
+      "- Kubernetes 클러스터 및 Jenkins를 활용한 CI/CD Pipeline 구축",
+      "- 개발 진행 모니터링 및 내부 QA 및 POC 관련 배포 작업의 편의 향상 달성",
     ],
   },
   {
