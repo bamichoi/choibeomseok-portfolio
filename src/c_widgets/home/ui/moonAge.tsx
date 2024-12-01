@@ -1,9 +1,11 @@
 import { requestMoonAge } from "@/c_widgets/home/api/reqMoonAge";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
 const MoonAge = () => {
   const [lunAge, setLunAge] = useState<number>();
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
   const getMoonAge = async () => {
     const today = new Date();
     const solYear = String(today.getFullYear());
@@ -23,25 +25,73 @@ const MoonAge = () => {
 
     setLunAge(lunAge);
   };
+  const drawMoon = (ctx: CanvasRenderingContext2D, lunAge: number) => {
+    const canvasWidth = ctx.canvas.width;
+    const canvasHeight = ctx.canvas.height;
+    const radius = canvasWidth / 2;
 
-  const handleMoonClick = () => {
-    window.open(
-      "https://starwalk.space/ko/moon-calendar",
-      "_blank",
-      "noopener,noreferrer"
-    );
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+    const tiltAngle = 10;
+
+    ctx.save();
+    ctx.translate(radius, radius);
+    ctx.rotate((tiltAngle * Math.PI) / 180);
+    ctx.translate(-radius, -radius);
+
+    ctx.fillStyle = "#9bb7d4";
+    ctx.beginPath();
+    ctx.arc(radius, radius, radius, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = "#1c4e89";
+    ctx.beginPath();
+
+    const isWaxing = lunAge <= 14.75;
+    const shadowRadius = radius;
+    const shadowOffset = isWaxing
+      ? canvasWidth * (lunAge / 14.75)
+      : canvasWidth * ((29.5 - lunAge) / 14.75);
+
+    if (isWaxing) {
+      ctx.arc(radius - shadowOffset, radius, shadowRadius, 0, Math.PI * 2);
+    } else {
+      ctx.arc(radius + shadowOffset, radius, shadowRadius, 0, Math.PI * 2);
+    }
+    ctx.fill();
+
+    ctx.restore();
   };
 
   useEffect(() => {
     getMoonAge();
   }, []);
 
+  useEffect(() => {
+    if (lunAge !== undefined && canvasRef.current) {
+      const ctx = canvasRef.current.getContext("2d");
+      if (ctx) {
+        drawMoon(ctx, lunAge);
+      }
+    }
+  }, [lunAge]);
+
   return (
     <MoonAgeContainer>
       <MoonAgeValue>{lunAge}</MoonAgeValue>
-      {lunAge && (
-        <Moon $lunAge={lunAge} title="달의 위상" onClick={handleMoonClick} />
-      )}
+      <MoonCanvas
+        ref={canvasRef}
+        width="100"
+        height="100"
+        title="달의 위상"
+        onClick={() =>
+          window.open(
+            "https://starwalk.space/ko/moon-calendar",
+            "_blank",
+            "noopener,noreferrer"
+          )
+        }
+      />
     </MoonAgeContainer>
   );
 };
@@ -54,37 +104,12 @@ const MoonAgeContainer = styled.div`
   align-items: center;
 `;
 
-const Moon = styled.div<{ $lunAge: number }>`
+const MoonCanvas = styled.canvas`
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #1c4e89;
-  position: relative;
-  overflow: hidden;
   cursor: pointer;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #9bb7d4;
-
-    ${({ $lunAge }) => {
-      if ($lunAge <= 14.75) {
-        // Waxing (차오름) - 오른쪽에서 왼쪽으로 채워짐 (곡선 경계)
-        const percentage = ($lunAge / 14.75) * 100;
-        return `clip-path: circle(${percentage}% at 100% 50%);`;
-      } else {
-        // Waning (기울어짐) - 왼쪽에서 오른쪽으로 비워짐 (곡선 경계)
-        const percentage = ((29.5 - $lunAge) / 14.75) * 100;
-        return `clip-path: circle(${percentage}% at 0% 50%);`;
-      }
-    }}
-  }
 `;
 
 const MoonAgeValue = styled.div`
