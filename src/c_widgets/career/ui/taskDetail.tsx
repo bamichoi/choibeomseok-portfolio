@@ -29,16 +29,18 @@ const TaskDetail = ({ selectedProjectId }: TaskDetailProps) => {
           ))}
         </Tasks>
       </ContentWrapper>
-      <ContentWrapper>
-        <Subtitle>Articles</Subtitle>
-        <Articles>
-          {articles.map((article) => (
-            <Article onClick={() => handleArticleClick(article.url)}>
-              - {article.title}
-            </Article>
-          ))}
-        </Articles>
-      </ContentWrapper>
+      {articles.length === 0 && (
+        <ContentWrapper>
+          <Subtitle>Articles</Subtitle>
+          <Articles>
+            {articles.map((article) => (
+              <Article onClick={() => handleArticleClick(article.url)}>
+                - {article.title}
+              </Article>
+            ))}
+          </Articles>
+        </ContentWrapper>
+      )}
     </TaskDetailContainer>
   );
 };
