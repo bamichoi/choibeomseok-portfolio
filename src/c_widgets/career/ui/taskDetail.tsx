@@ -29,7 +29,7 @@ const TaskDetail = ({ selectedProjectId }: TaskDetailProps) => {
           ))}
         </Tasks>
       </ContentWrapper>
-      {articles.length === 0 && (
+      {articles.length !== 0 && (
         <ContentWrapper>
           <Subtitle>Articles</Subtitle>
           <Articles>

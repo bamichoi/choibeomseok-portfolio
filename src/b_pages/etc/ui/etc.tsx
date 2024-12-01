@@ -2,12 +2,17 @@ import styled from "styled-components";
 import KnuSVG from "@shared/ui/assets/images/univLogo/knu.svg?react";
 import PerugiaSVG from "@shared/ui/assets/images/univLogo/perugia.svg?react";
 import RomaSVG from "@shared/ui/assets/images/univLogo/roma.svg?react";
-import Baby3SVG from "@shared/ui/assets/images/castingLogo/baby.svg?react";
-import TurbeSVG from "@shared/ui/assets/images/castingLogo/turbe.svg?react";
-import NovecentoSVG from "@shared/ui/assets/images/castingLogo/novecento.svg?react";
 import PetSVG from "@shared/ui/assets/images/hangboghi.svg?react";
 
 const Etc = () => {
+  const handleCVClick = () => {
+    window.open(
+      "https://buttoned-garage-49e.notion.site/Beomseok-Choi-14fb67f2506a80f39febe77c7e8ad5f4?pvs=4",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <EtcContainer>
       <AboutGrid>
@@ -47,34 +52,8 @@ const Etc = () => {
           </DetailWrapper>
         </ItemWrapper>
         <ItemWrapper>
-          <Property>Casting </Property>
-          <DetailWrapper>
-            <Baby3SVG />
-            <TextWrapper>
-              <MainText>Baby3</MainText>
-              <SubText>Neflix Original Series</SubText>
-              <SubText>단역, 호텔 투숙객 커플 남자1 역</SubText>
-              <SubText>2019.09</SubText>
-            </TextWrapper>
-          </DetailWrapper>
-          <DetailWrapper>
-            <NovecentoSVG />
-            <TextWrapper>
-              <MainText>Novecento</MainText>
-              <SubText>7th AS Film Festival 단편 경쟁작</SubText>
-              <SubText>조연, 한국인 룸메이트 역</SubText>
-              <SubText>2019.12</SubText>
-            </TextWrapper>
-          </DetailWrapper>
-          <DetailWrapper>
-            <TurbeSVG />
-            <TextWrapper>
-              <MainText>Turbe</MainText>
-              <SubText>Episodio #12: Esotico</SubText>
-              <SubText>주연, Bami 역</SubText>
-              <SubText>2019.05</SubText>
-            </TextWrapper>
-          </DetailWrapper>
+          <Property>Documents</Property>
+          <CVBox onClick={handleCVClick}>Curriculum vitae</CVBox>
         </ItemWrapper>
       </AboutGrid>
     </EtcContainer>
@@ -144,4 +123,18 @@ const PetName = styled.div`
   color: #9bb7d4;
   text-align: center;
   width: 214px;
+`;
+
+const CVBox = styled.div`
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #9bb7d4;
+  cursor: pointer;
+  color: #1c4e89;
+
+  &:hover {
+    color: white;
+  }
 `;
