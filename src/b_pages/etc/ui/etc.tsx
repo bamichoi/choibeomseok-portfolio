@@ -7,7 +7,7 @@ import PetSVG from "@shared/ui/assets/images/hangboghi.svg?react";
 const Etc = () => {
   const handleCVClick = () => {
     window.open(
-      "https://buttoned-garage-49e.notion.site/Beomseok-Choi-14fb67f2506a80f39febe77c7e8ad5f4?pvs=4",
+      "https://buttoned-garage-49e.notion.site/Curriculum-vitae-15eb67f2506a8001913dfbd1b13215d5?pvs=4",
       "_blank",
       "noopener,noreferrer"
     );
