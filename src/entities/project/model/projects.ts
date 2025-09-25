@@ -1,77 +1,76 @@
 /* stack icons */
-import ReactSVG from "@shared/ui/assets/images/stackLogo/react.svg";
-import ReactHookFormSVG from "@shared/ui/assets/images/stackLogo/react-hook-form.svg";
-import ReactQuerySVG from "@shared/ui/assets/images/stackLogo/react-query.svg";
-import ViteSVG from "@shared/ui/assets/images/stackLogo/vite.svg";
-import TypescriptSVG from "@shared/ui/assets/images/stackLogo/typescript.svg";
-import SwiperSVG from "@shared/ui/assets/images/stackLogo/swiper.png";
-// import NextjsSVG from "@shared/ui/assets/images/stackLogo/nextjs.svg";
-import DjangoSVG from "@shared/ui/assets/images/stackLogo/django.svg";
-import MobxSVG from "@shared/ui/assets/images/stackLogo/mobx.svg";
-import RecoilSVG from "@shared/ui/assets/images/stackLogo/recoil.svg";
-import JavascriptSVG from "@shared/ui/assets/images/stackLogo/javascript.svg";
-import FfmpegwasmSVG from "@shared/ui/assets/images/stackLogo/ffmpeg-wasm.png";
-import ScssSVG from "@shared/ui/assets/images/stackLogo/scss.svg";
-import StyledComponentsSVG from "@shared/ui/assets/images/stackLogo/styled-components.png";
-import TailwindcssSVG from "@shared/ui/assets/images/stackLogo/tailwindcss.svg";
-import ReduxSVG from "@shared/ui/assets/images/stackLogo/redux.svg";
-import NodejsSVG from "@shared/ui/assets/images/stackLogo/nodejs.svg";
-import ExpressSVG from "@shared/ui/assets/images/stackLogo/express.png";
-import BedrockSVG from "@shared/ui/assets/images/stackLogo/bedrock.png";
-import LambdaSVG from "@shared/ui/assets/images/stackLogo/lambda.png";
-import BunSVG from "@shared/ui/assets/images/stackLogo/bun.png";
-import ChatGPTSVG from "@shared/ui/assets/images/stackLogo/chatGPT.svg";
-import JotaiSVG from "@shared/ui/assets/images/stackLogo/jotai.png";
-import ExpoSVG from "@shared/ui/assets/images/stackLogo/expo.svg";
-import ZustandSVG from "@shared/ui/assets/images/stackLogo/zustand.png";
+import {
+  ReactSVG,
+  ReactHookFormSVG,
+  ReactQuerySVG,
+  ViteSVG,
+  TypescriptSVG,
+  SwiperSVG,
+  DjangoSVG,
+  MobxSVG,
+  RecoilSVG,
+  JavascriptSVG,
+  FfmpegwasmSVG,
+  ScssSVG,
+  StyledComponentsSVG,
+  TailwindcssSVG,
+  ReduxSVG,
+  NodejsSVG,
+  ExpressSVG,
+  BedrockSVG,
+  LambdaSVG,
+  BunSVG,
+  ChatGPTSVG,
+  JotaiSVG,
+  ExpoSVG,
+  ZustandSVG,
+} from "@shared/assets";
 
-/* preview screenshot */
+/* preview images */
+import {
+  Cineacca1SVG,
+  Cineacca2SVG,
+  Cineacca3SVG,
+  Cineacca4SVG,
+  Hellokorea1SVG,
+  Hellokorea2SVG,
+  Hellokorea3SVG,
+  Hellokorea4SVG,
+  FridayT1SVG,
+  FridayT2SVG,
+  FridayT3SVG,
+  BoardMe1PNG,
+  BoardMe2PNG,
+  BoardMe3PNG,
+  BoardMe4PNG,
+  BoardMe5PNG,
+  BoardMe6PNG,
+  KarmaPNG,
+  CoffeeBirdyPNG,
+  AnnualBliss1PNG,
+  AnnualBliss2PNG,
+  AnnualBliss3PNG,
+} from "@shared/assets";
 
-import Cineacca1SVG from "@shared/ui/assets/images/preview/cineacca.jpg";
-import Cineacca2SVG from "@shared/ui/assets/images/preview/cineacca_2.jpg";
-import Cineacca3SVG from "@shared/ui/assets/images/preview/cineacca_3.jpg";
-import Cineacca4SVG from "@shared/ui/assets/images/preview/cineacca_4.jpg";
-
-import Hellokorea1SVG from "@shared/ui/assets/images/preview/hellokorea.png";
-import Hellokorea2SVG from "@shared/ui/assets/images/preview/hellokorea2.png";
-import Hellokorea3SVG from "@shared/ui/assets/images/preview/hellokorea3.png";
-import Hellokorea4SVG from "@shared/ui/assets/images/preview/hellokorea4.png";
-
-import FridayT1SVG from "@shared/ui/assets/images/preview/fridayT.png";
-import FridayT2SVG from "@shared/ui/assets/images/preview/fridayT2.png";
-import FridayT3SVG from "@shared/ui/assets/images/preview/fridayT3.png";
-
-import BoardMe1PNG from "@shared/ui/assets/images/preview/boardme.png";
-import BoardMe2PNG from "@shared/ui/assets/images/preview/boardme2.png";
-import BoardMe3PNG from "@shared/ui/assets/images/preview/boardme3.png";
-import BoardMe4PNG from "@shared/ui/assets/images/preview/boardme4.png";
-import BoardMe5PNG from "@shared/ui/assets/images/preview/boardme5.png";
-import BoardMe6PNG from "@shared/ui/assets/images/preview/boardme6.png";
-
-import KarmaPNG from "@shared/ui/assets/images/preview/karma.png";
-
-import CoffeeBirdyPNG from "@shared/ui/assets/images/preview/coffeeBirdy.png";
-
-import AnnualBliss1PNG from "@shared/ui/assets/images/preview/annualBliss.png";
-import AnnualBliss2PNG from "@shared/ui/assets/images/preview/annualBliss2.png";
-import AnnualBliss3PNG from "@shared/ui/assets/images/preview/annualBliss3.png";
-/* project logo */
-import StagecueLogo from "@shared/ui/assets/images/projectLogo/stagecue.svg";
-import StagecueFullLogo from "@shared/ui/assets/images/projectLogo/stagecue_full.svg";
-import FridayTLogo from "@shared/ui/assets/images/projectLogo/fridayT.png";
-import FridayTFullLogo from "@shared/ui/assets/images/projectLogo/fridayT_full.png";
-import BoardmeLogo from "@shared/ui/assets/images/projectLogo/boardme.png";
-import BoardmeFullLogo from "@shared/ui/assets/images/projectLogo/boardme_full.svg";
-import CineaccaLogo from "@shared/ui/assets/images/projectLogo/cineacca.svg";
-import CineaccaFullLogo from "@shared/ui/assets/images/projectLogo/cineacca_full.svg";
-import HellokoreaLogo from "@shared/ui/assets/images/projectLogo/hellokorea.svg";
-import HellokoreaFullLogo from "@shared/ui/assets/images/projectLogo/hellokorea_full.svg";
-import KarmaLogo from "@shared/ui/assets/images/projectLogo/karma.png";
-import KarmaFullLogo from "@shared/ui/assets/images/projectLogo/karma_full.png";
-import CoffeeBirdyLogo from "@shared/ui/assets/images/projectLogo/coffeeBirdy.png";
-import CoffeeBirdyFullLogo from "@shared/ui/assets/images/projectLogo/coffeeBirdy_full.png";
-import AnnualBlissLogo from "@shared/ui/assets/images/projectLogo/annualBliss.png";
-import AnnualBlissFullLogo from "@shared/ui/assets/images/projectLogo/annualBliss_full.png";
+/* project logos */
+import {
+  StagecueLogo,
+  StagecueFullLogo,
+  FridayTLogo,
+  FridayTFullLogo,
+  BoardmeLogo,
+  BoardmeFullLogo,
+  CineaccaLogo,
+  CineaccaFullLogo,
+  HellokoreaLogo,
+  HellokoreaFullLogo,
+  KarmaLogo,
+  KarmaFullLogo,
+  CoffeeBirdyLogo,
+  CoffeeBirdyFullLogo,
+  AnnualBlissLogo,
+  AnnualBlissFullLogo,
+} from "@shared/assets";
 
 export const PROJECTS = [
   {
@@ -120,35 +119,6 @@ export const PROJECTS = [
       "- FSD 아키텍쳐 기반의 체계적인 컴포넌트 관리",
       "- Shadcn ui를 활용한 디자인 시스템 관리 및 UI 구현",
       "- AWS Bedrock의 KB 기반 AI agent를 활용한 추천 기능 구현",
-    ],
-  },
-  {
-    id: 6,
-    title: "카르마의 평행우주",
-    logo: KarmaLogo,
-    fullLogo: KarmaFullLogo,
-    subtitle: "과거 회귀 가상 시뮬레이터",
-    url: "https://karmaparalleluniverse.com/",
-    images: [KarmaPNG],
-    stacks: [
-      ReactSVG,
-      TypescriptSVG,
-      StyledComponentsSVG,
-      ViteSVG,
-      BunSVG,
-      JotaiSVG,
-      ReactHookFormSVG,
-      LambdaSVG,
-      ChatGPTSVG,
-    ],
-    startDate: "2025.08",
-    endDate: "2025.08",
-    description:
-      "초지능 AI휴머노이드 카르마와 함께 자신의 과거의 선택을 바꿔보는 가상 시뮬레이션 서비스입니다.",
-    tasks: [
-      "- React Hook Form과 Zod를 이용한 Form Validation",
-      "- AWS lambda 및 API Gateway를 활용한 백엔드 구현",
-      "- i18n 다국어 지원",
     ],
   },
   {

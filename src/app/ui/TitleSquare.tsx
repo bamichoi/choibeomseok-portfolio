@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import starIcon from "@/shared/ui/assets/images/plant.png";
+import { PlantImage } from "@shared/assets";
 
 interface TitleProps {
   onClick: () => void;
@@ -9,7 +9,7 @@ export const TitleSquare = ({ onClick }: TitleProps) => {
   return (
     <TitleContainer onClick={onClick}>
       <Name>Choi Beomseok | 최 범 석</Name>
-      <StatusIcon src={starIcon} alt="star" />
+      <StatusIcon src={PlantImage} alt="plant" />
       <Job>Frontend Developer</Job>
     </TitleContainer>
   );

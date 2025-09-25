@@ -1,3 +1,24 @@
+import {
+  ReactSVG,
+  ReactHookFormSVG,
+  ViteSVG,
+  TypescriptSVG,
+  StyledComponentsSVG,
+  BedrockSVG,
+  LambdaSVG,
+  BunSVG,
+  ChatGPTSVG,
+  JotaiSVG,
+  VueSVG,
+  NuxtSVG,
+  WebsocketSVG,
+  KubeSVG,
+  TritonSVG,
+  SwrSVG,
+  ApexSVG,
+  JenkinsSVG,
+} from "@shared/assets";
+
 export const TMAX_PROJECTS = [
   {
     id: 1,
@@ -10,6 +31,7 @@ export const TMAX_PROJECTS = [
       "- 개발 확장성과 재사용성을 고려한 UI 공통 컴포넌트 설계",
       "- End-User 채팅 애플리케이션 UI 및 STT 기능 개발",
     ],
+    stacks: [ReactSVG, TypescriptSVG, SwrSVG, StyledComponentsSVG],
   },
   {
     id: 3,
@@ -22,6 +44,7 @@ export const TMAX_PROJECTS = [
       "- Audio Recorder 및 Audio Player 컴포넌트 개발",
       "- TTS 체험 기능 및 Parallax Scrolling UI 개발",
     ],
+    stacks: [ReactSVG, TypescriptSVG, StyledComponentsSVG, WebsocketSVG],
   },
   {
     id: 4,
@@ -34,6 +57,7 @@ export const TMAX_PROJECTS = [
       "- ApexCharts를 활용한 학습자 발음 평가 데이터 시각화",
       "- 공통 레이아웃 컴포넌트 개발",
     ],
+    stacks: [ReactSVG, TypescriptSVG, StyledComponentsSVG, ApexSVG],
   },
   {
     id: 6,
@@ -46,6 +70,7 @@ export const TMAX_PROJECTS = [
       "- Triton Inference Server 를 활용한 모델 배포",
       "- 모델 관리 및 추론 테스트용 백오피스 개발",
     ],
+    stacks: [ReactSVG, TypescriptSVG, StyledComponentsSVG, KubeSVG, TritonSVG],
   },
   {
     id: 7,
@@ -54,6 +79,7 @@ export const TMAX_PROJECTS = [
       description: "프론트엔드 배포 자동화를 위한 CI/CD pipline 구축",
     },
     tasks: ["- Jenkins를 활용한 프론트엔드 애플리케이션 CI/CD 자동화"],
+    stacks: [JenkinsSVG],
   },
   {
     id: 8,
@@ -66,6 +92,7 @@ export const TMAX_PROJECTS = [
       "- 자사 구축 지식 관계 플랫폼(KRP)에 활용되는 NLP 모델의 추론 테스트 애플리케이션 개발",
       "- 각 파이프라인 단위로 단계별 테스트 구현",
     ],
+    stacks: [ReactSVG, TypescriptSVG, StyledComponentsSVG],
   },
 ];
 
@@ -84,6 +111,7 @@ export const AGEFREE_PROJECTS = [
       "- Virtual Scroll을 활용한 데이터 리스트의 성능 최적화",
       "- i18n을 활용한 다국어 처리",
     ],
+    stacks: [VueSVG, NuxtSVG],
   },
 ];
 
@@ -91,13 +119,24 @@ export const BLISS_PROJECTS = [
   {
     id: 1,
     summary: {
-      projectTitle: "카르마의 평행우주",
+      projectTitle: "카르마의 평행우주(Karma's Parallel Universe)",
       description: "BLISS PROJECT #0",
     },
     tasks: [
       "- React Hook Form과 Zod를 이용한 Form Validation",
       "- AWS lambda 및 API Gateway를 활용한 백엔드 구현",
       "- i18n 다국어 지원",
+    ],
+    stacks: [
+      ReactSVG,
+      TypescriptSVG,
+      StyledComponentsSVG,
+      ViteSVG,
+      BunSVG,
+      JotaiSVG,
+      ReactHookFormSVG,
+      LambdaSVG,
+      ChatGPTSVG,
     ],
   },
   {
@@ -113,6 +152,16 @@ export const BLISS_PROJECTS = [
       "- expo-file-system/next를 활용한 사진 파일 관리",
       "- 클로즈 베타 테스트 진행을 통한 UX 피드백 반영 및 개선",
       "- AppStore 배포 및 운영중 / Android 내부 테스트 진행중",
+    ],
+    stacks: [
+      ReactSVG,
+      TypescriptSVG,
+      ViteSVG,
+      BunSVG,
+      JotaiSVG,
+      ReactHookFormSVG,
+      BedrockSVG,
+      LambdaSVG,
     ],
   },
 ];

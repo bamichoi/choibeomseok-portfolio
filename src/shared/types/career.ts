@@ -5,6 +5,7 @@ export interface Project {
     description: string;
   };
   tasks: string[];
+  stacks: string[];
 }
 
 export interface CareerItem {

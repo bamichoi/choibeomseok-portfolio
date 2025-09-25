@@ -4,15 +4,14 @@ import {
   TMAX_PROJECTS,
 } from "./careerProjects";
 import type { CareerItem } from "@shared/types/career";
-import TmaxSVG from "@shared/ui/assets/images/careerLogo/tmaxLogo.svg?react";
-import BlissLogo from "@shared/ui/assets/images/careerLogo/blissLogo.png";
+import { TmaxLogo, BlissLogo } from "@shared/assets";
 
 export const CAREER_DATA: CareerItem[] = [
   {
     id: "tmax",
     title: "TmaxAI",
     period: "2022.10 - 2024.10",
-    logo: TmaxSVG,
+    logo: TmaxLogo,
     projects: TMAX_PROJECTS,
   },
   {

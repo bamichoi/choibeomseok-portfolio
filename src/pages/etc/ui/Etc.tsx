@@ -1,8 +1,5 @@
 import styled from "styled-components";
-import KnuSVG from "@shared/ui/assets/images/univLogo/knu.svg?react";
-import PerugiaSVG from "@shared/ui/assets/images/univLogo/perugia.svg?react";
-import RomaSVG from "@shared/ui/assets/images/univLogo/roma.svg?react";
-import PetSVG from "@shared/ui/assets/images/hangboghi.svg?react";
+import { KnuLogo, PerugiaLogo, RomaLogo, HangboghiImage } from "@shared/assets";
 
 export const Etc = () => {
   const handleCVClick = () => {
@@ -20,7 +17,7 @@ export const Etc = () => {
           <Property>Puppy</Property>
           <TextWrapper>
             <SvgWrapper>
-              <PetSVG />
+              <PetImage src={HangboghiImage} alt="Pet" />
             </SvgWrapper>
             <PetName>행복이 (♂, 1살)</PetName>
           </TextWrapper>
@@ -28,14 +25,14 @@ export const Etc = () => {
         <ItemWrapper>
           <Property>Education</Property>
           <DetailWrapper>
-            <KnuSVG />
+            <UnivImage src={KnuLogo} alt="KNU" />
             <TextWrapper>
               <MainText>경북대학교 철학과 졸업</MainText>
               <SubText>2009.03 - 2017.02</SubText>
             </TextWrapper>
           </DetailWrapper>
           <DetailWrapper>
-            <PerugiaSVG />
+            <UnivImage src={PerugiaLogo} alt="Perugia" />
             <TextWrapper>
               <MainText>Università per Stranieri di Perugia</MainText>
               <SubText>Italiano B1 과정 수료</SubText>
@@ -43,7 +40,7 @@ export const Etc = () => {
             </TextWrapper>
           </DetailWrapper>
           <DetailWrapper>
-            <RomaSVG />
+            <UnivImage src={RomaLogo} alt="Roma" />
             <TextWrapper>
               <MainText>Accademia Belle Arti di Roma</MainText>
               <SubText>Teorie e Tecniche dell'Audiovisivo 중퇴</SubText>
@@ -136,4 +133,17 @@ const CVBox = styled.div`
   &:hover {
     color: white;
   }
+`;
+
+const PetImage = styled.img`
+  width: 214px;
+  height: 214px;
+  border-radius: 10%;
+  object-fit: cover;
+`;
+
+const UnivImage = styled.img`
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 `;

@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import GithubSVG from "@shared/ui/assets/icons/github.svg?react";
-import LinkedinSVG from "@shared/ui/assets/icons/linkedin.svg?react";
-import MailSVG from "@shared/ui/assets/icons/mail.svg?react";
+import { GithubIcon, LinkedinIcon, MailIcon } from "@shared/assets";
 import { useToastStore } from "@/shared/model";
 
 export const Contact = () => {
@@ -22,7 +20,7 @@ export const Contact = () => {
         <IconWrapper
           onClick={() => handleIconClick("https://github.com/bamichoi")}
         >
-          <GithubSVG />
+          <IconImage src={GithubIcon} alt="Github" />
         </IconWrapper>
         <IconWrapper
           onClick={() =>
@@ -31,10 +29,10 @@ export const Contact = () => {
             )
           }
         >
-          <LinkedinSVG />
+          <IconImage src={LinkedinIcon} alt="LinkedIn" />
         </IconWrapper>
         <IconWrapper onClick={handleMailClick}>
-          <MailSVG />
+          <IconImage src={MailIcon} alt="Mail" />
         </IconWrapper>
       </ContactIcons>
     </ContactContainer>
@@ -58,14 +56,17 @@ const ContactIcons = styled.div`
 
 const IconWrapper = styled.div`
   cursor: pointer;
+  transition: opacity 0.2s ease;
   &:hover {
-    svg {
-      g {
-        fill: #9bb7d4;
-      }
-      path {
-        fill: #9bb7d4;
-      }
-    }
+    opacity: 0.7;
+  }
+`;
+
+const IconImage = styled.img`
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+  &:hover {
+    filter: invert(0.6) sepia(1) saturate(2) hue-rotate(200deg);
   }
 `;

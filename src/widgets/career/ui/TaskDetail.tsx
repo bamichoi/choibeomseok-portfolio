@@ -39,12 +39,25 @@ export const TaskDetail = ({
               ))}
             </Tasks>
           </ContentWrapper>
+          {selectedProject.stacks && selectedProject.stacks.length > 0 && (
+            <ContentWrapper>
+              <Subtitle>Stacks</Subtitle>
+              <Stacks>
+                {selectedProject.stacks.map((stack, index) => (
+                  <StackImage key={index} src={stack} alt="stack" />
+                ))}
+              </Stacks>
+            </ContentWrapper>
+          )}
           {articles.length !== 0 && (
             <ContentWrapper>
               <Subtitle>Articles</Subtitle>
               <Articles>
                 {articles.map((article) => (
-                  <Article key={article.id} onClick={() => handleArticleClick(article.url)}>
+                  <Article
+                    key={article.id}
+                    onClick={() => handleArticleClick(article.url)}
+                  >
                     - {article.title}
                   </Article>
                 ))}
@@ -58,7 +71,6 @@ export const TaskDetail = ({
     </TaskDetailContainer>
   );
 };
-
 
 const TaskDetailContainer = styled.div`
   display: flex;
@@ -116,6 +128,18 @@ const Article = styled.div`
   &:hover {
     color: white;
   }
+`;
+
+const Stacks = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+`;
+
+const StackImage = styled.img`
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 `;
 
 const EmptyState = styled.div`
