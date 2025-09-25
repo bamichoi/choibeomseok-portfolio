@@ -2,6 +2,7 @@ import { Etc } from "@/pages/etc";
 import { Career } from "@/pages/career";
 import { Contact } from "@/pages/contact";
 import { Home } from "@/pages/home";
+import { Philosophy } from "@/pages/philosophy";
 import { Projects } from "@/pages/project";
 import { Research } from "@/pages/research";
 import { Layout } from "@/app/ui";
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/philosophy",
+        element: <Philosophy />,
       },
       {
         path: "/etc",

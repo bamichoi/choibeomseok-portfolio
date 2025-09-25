@@ -12,7 +12,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import styled from "styled-components";
 import { Footer, TitleSquare } from "@/app/ui";
 
-type MenuType = "career" | "projects" | "research" | "contact" | "etc" | "home";
+type MenuType = "career" | "projects" | "research" | "contact" | "philosophy" | "etc" | "home";
 
 interface MenuItem {
   name: MenuType;
@@ -40,6 +40,7 @@ export const Sidemenu = () => {
 
   const menuList: MenuItem[] = useMemo(
     () => [
+      { name: "philosophy", onClick: () => handleClickMenu("philosophy") },
       { name: "career", onClick: () => handleClickMenu("career") },
       { name: "projects", onClick: () => handleClickMenu("projects") },
       { name: "research", onClick: () => handleClickMenu("research") },
