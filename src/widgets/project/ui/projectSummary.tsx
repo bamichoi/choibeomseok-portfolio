@@ -1,12 +1,12 @@
-import { PROJECTS } from "@/entities/project/model/projects";
+import { PROJECTS } from "@/entities/project";
 import styled from "styled-components";
-import PreviewSlide from "./PreviewSlide";
+import { PreviewSlide } from "./PreviewSlide";
 
 interface ProjectSummaryProps {
   selectedProjectId: number;
 }
 
-const ProjectSummary = ({ selectedProjectId }: ProjectSummaryProps) => {
+export const ProjectSummary = ({ selectedProjectId }: ProjectSummaryProps) => {
   const project = PROJECTS.find((project) => project.id === selectedProjectId);
 
   const handleSiteLinkClick = () => {
@@ -61,7 +61,6 @@ const ProjectSummary = ({ selectedProjectId }: ProjectSummaryProps) => {
   );
 };
 
-export { ProjectSummary };
 
 const ProjectSummaryContainer = styled.div`
   width: 100%;

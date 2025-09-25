@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import CareerHeader from "./CareerHeader";
-import CareerProject from "./careerProject";
+import { CareerHeader } from "./CareerHeader";
+import { CareerProject } from "./CareerProject";
 import type { Project } from "@shared/types/career";
 
 interface CareerSummaryProps {
@@ -15,7 +15,7 @@ interface CareerSummaryProps {
   onProjectClick: (id: number) => void;
 }
 
-const CareerSummary = ({
+export const CareerSummary = ({
   id,
   title,
   period,
@@ -55,7 +55,6 @@ const CareerSummary = ({
   );
 };
 
-export { CareerSummary };
 
 const Summary = styled.div`
   width: 100%;

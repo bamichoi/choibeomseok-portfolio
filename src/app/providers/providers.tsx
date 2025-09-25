@@ -1,13 +1,13 @@
 import { RouterProvider } from "react-router-dom";
 import type { Router } from "@remix-run/router/dist/router";
 import { Reset } from "styled-reset";
-import GlobalStyle from "../ui/globalStyle";
+import { GlobalStyle } from "@/app/ui";
 
 interface ProvidersProps {
   router: Router;
 }
 
-const Providers = ({ router }: ProvidersProps) => {
+export const Providers = ({ router }: ProvidersProps) => {
   return (
     <>
       <Reset />
@@ -17,4 +17,3 @@ const Providers = ({ router }: ProvidersProps) => {
   );
 };
 
-export default Providers;

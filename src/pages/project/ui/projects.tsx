@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ProjectSlide, ProjectSummary, ProjectList } from "@/widgets";
+import { ProjectSlide, ProjectSummary, ProjectList } from "@/widgets/project";
 import { useParams, useNavigate } from "react-router-dom";
 
 export const Projects = () => {

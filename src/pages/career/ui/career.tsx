@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
-import { CareerSummary, TaskDetail } from "@/widgets";
-import { CAREER_DATA } from "@/entities/career/model/careerData";
+import { CareerSummary, TaskDetail } from "@/widgets/career";
+import { CAREER_DATA } from "@/entities/career";
 
 export const Career = () => {
   const [selectedProjectId, setSelectedProjectId] = useState(1);

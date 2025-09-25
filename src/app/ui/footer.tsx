@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <FooterContainer>
       ©2024. Choi Beomseok. All rights reserved.
@@ -8,7 +8,6 @@ const Footer = () => {
   );
 };
 
-export default Footer;
 
 const FooterContainer = styled.div`
   width: 100%;

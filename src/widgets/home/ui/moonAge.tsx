@@ -1,8 +1,8 @@
-import { requestMoonAge } from "@/widgets";
+import { requestMoonAge } from "@/widgets/home";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
-const MoonAge = () => {
+export const MoonAge = () => {
   const [lunAge, setLunAge] = useState<number>();
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -96,7 +96,6 @@ const MoonAge = () => {
   );
 };
 
-export { MoonAge };
 
 const MoonAgeContainer = styled.div`
   display: flex;

@@ -1,13 +1,13 @@
-import Etc from "@/pages/etc/ui/etc";
-import Career from "@/pages/career/ui/career";
-import Contact from "@/pages/contact/ui/contact";
-import Home from "@/pages/home/ui/home";
-import Projects from "@/pages/project/ui/projects";
-import Research from "@/pages/research/ui/research";
-import Layout from "@/app/ui/layout";
+import { Etc } from "@/pages/etc";
+import { Career } from "@/pages/career";
+import { Contact } from "@/pages/contact";
+import { Home } from "@/pages/home";
+import { Projects } from "@/pages/project";
+import { Research } from "@/pages/research";
+import { Layout } from "@/app/ui";
 import { createBrowserRouter } from "react-router-dom";
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
@@ -44,4 +44,3 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;

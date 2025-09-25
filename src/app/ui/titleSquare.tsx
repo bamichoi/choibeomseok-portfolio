@@ -1,20 +1,19 @@
 import styled from "styled-components";
+import starIcon from "@/shared/ui/assets/images/plant.png";
 
 interface TitleProps {
   onClick: () => void;
 }
 
-const Title = ({ onClick }: TitleProps) => {
+export const TitleSquare = ({ onClick }: TitleProps) => {
   return (
     <TitleContainer onClick={onClick}>
       <Name>Choi Beomseok | 최 범 석</Name>
-      <StatusIcon>⭐️</StatusIcon>
+      <StatusIcon src={starIcon} alt="star" />
       <Job>Frontend Developer</Job>
     </TitleContainer>
   );
 };
-
-export default Title;
 
 const TitleContainer = styled.div`
   padding: 1.2rem;
@@ -42,7 +41,8 @@ const Job = styled.div`
   text-align: end;
 `;
 
-const StatusIcon = styled.div`
-  width: 100%;
-  text-align: center;
+const StatusIcon = styled.img`
+  width: 20px;
+  height: 30px;
+  align-self: center;
 `;

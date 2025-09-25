@@ -10,8 +10,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 import styled from "styled-components";
-import Footer from "./footer";
-import Title from "./titleSquare";
+import { Footer, TitleSquare } from "@/app/ui";
 
 type MenuType = "career" | "projects" | "research" | "contact" | "etc" | "home";
 
@@ -20,7 +19,7 @@ interface MenuItem {
   onClick: (menu: MenuType) => void;
 }
 
-const Sidemenu = () => {
+export const Sidemenu = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
@@ -71,7 +70,7 @@ const Sidemenu = () => {
 
   return (
     <SidemenuContainer>
-      <Title onClick={handleTitleClick} />
+      <TitleSquare onClick={handleTitleClick} />
       <MenuWrapper>
         <AnimatePresence initial={false}>
           {sortedMenuList?.map((menu) => (
@@ -91,7 +90,6 @@ const Sidemenu = () => {
   );
 };
 
-export default Sidemenu;
 
 const SidemenuContainer = styled.div`
   display: flex;

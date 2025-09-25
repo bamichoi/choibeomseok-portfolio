@@ -1,4 +1,4 @@
-import MoonAge from "@/widgets/home/ui/moonAge";
+import { MoonAge } from "@/widgets/home";
 import styled from "styled-components";
 
 export const Home = () => {
@@ -11,7 +11,6 @@ export const Home = () => {
   );
 };
 
-export default Home;
 
 const HomeContainer = styled.div`
   display: flex;

@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
-import Sidemenu from "./sidemenu";
-import Toast from "../../shared/ui/toast";
+import { Sidemenu } from "@/app/ui";
+import { Toast } from "@/shared/ui";
 
-const Layout = () => {
+export const Layout = () => {
   return (
     <LayoutContainer>
       <Sidemenu />
@@ -16,7 +16,6 @@ const Layout = () => {
   );
 };
 
-export default Layout;
 
 const LayoutContainer = styled.div`
   background-color: #1d4e89;

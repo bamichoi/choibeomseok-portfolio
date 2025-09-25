@@ -19,4 +19,4 @@ const request = async ({ url, method, data }: RequestArgs) => {
   return res;
 };
 
-export default request;
+export { request };

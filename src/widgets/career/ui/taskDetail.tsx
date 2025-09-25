@@ -1,5 +1,5 @@
-import { CAREER_DATA } from "@/entities/career/model/careerData";
-import { RESEARCH_DATA } from "@/entities/research/model/research";
+import { CAREER_DATA } from "@/entities/career";
+import { RESEARCH_DATA } from "@/entities/research";
 import styled from "styled-components";
 
 interface TaskDetailProps {
@@ -7,7 +7,7 @@ interface TaskDetailProps {
   selectedCareerId: string;
 }
 
-const TaskDetail = ({
+export const TaskDetail = ({
   selectedProjectId,
   selectedCareerId,
 }: TaskDetailProps) => {
@@ -34,8 +34,8 @@ const TaskDetail = ({
             <Title>{selectedProject.summary.projectTitle}</Title>
             <Subtitle>Tasks</Subtitle>
             <Tasks>
-              {selectedProject.tasks.map((task) => (
-                <Task>{task}</Task>
+              {selectedProject.tasks.map((task, index) => (
+                <Task key={index}>{task}</Task>
               ))}
             </Tasks>
           </ContentWrapper>
@@ -44,7 +44,7 @@ const TaskDetail = ({
               <Subtitle>Articles</Subtitle>
               <Articles>
                 {articles.map((article) => (
-                  <Article onClick={() => handleArticleClick(article.url)}>
+                  <Article key={article.id} onClick={() => handleArticleClick(article.url)}>
                     - {article.title}
                   </Article>
                 ))}
@@ -59,7 +59,6 @@ const TaskDetail = ({
   );
 };
 
-export { TaskDetail };
 
 const TaskDetailContainer = styled.div`
   display: flex;

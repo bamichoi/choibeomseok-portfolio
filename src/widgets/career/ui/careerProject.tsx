@@ -8,7 +8,7 @@ interface CareerProjectProps {
   onClick: (id: number) => void;
 }
 
-const CareerProject = ({
+export const CareerProject = ({
   id,
   projectTitle,
   description,
@@ -26,7 +26,6 @@ const CareerProject = ({
   );
 };
 
-export { CareerProject };
 
 const CareerProjectContainer = styled.div<{ $isSelected: boolean }>`
   cursor: pointer;

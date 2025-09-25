@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Header = () => {
+export const Header = () => {
   return (
     <HeaderContainer>
       <Navigater>
@@ -11,7 +11,6 @@ const Header = () => {
   );
 };
 
-export default Header;
 
 const HeaderContainer = styled.div`
   width: 100%;

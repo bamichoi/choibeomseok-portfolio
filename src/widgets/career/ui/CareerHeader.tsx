@@ -9,7 +9,7 @@ interface CareerHeaderProps {
   onToggle: () => void;
 }
 
-const CareerHeader = ({ title, period, logo, isExpanded, onToggle }: CareerHeaderProps) => {
+export const CareerHeader = ({ title, period, logo, isExpanded, onToggle }: CareerHeaderProps) => {
   return (
     <TitleWrapper onClick={onToggle}>
       <LogoWrapper>
@@ -34,7 +34,6 @@ const CareerHeader = ({ title, period, logo, isExpanded, onToggle }: CareerHeade
   );
 };
 
-export { CareerHeader };
 
 const TitleWrapper = styled.div`
   width: 100%;

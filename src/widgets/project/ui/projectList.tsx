@@ -1,11 +1,11 @@
-import { PROJECTS } from "@/entities/project/model/projects";
+import { PROJECTS } from "@/entities/project";
 import styled from "styled-components";
 
 interface ProjectListProps {
   onClick: (id: number) => void;
 }
 
-const ProjectList = ({ onClick }: ProjectListProps) => {
+export const ProjectList = ({ onClick }: ProjectListProps) => {
   return (
     <ProjectListContainer>
       <Title>Side Project List</Title>
@@ -21,7 +21,6 @@ const ProjectList = ({ onClick }: ProjectListProps) => {
   );
 };
 
-export { ProjectList };
 
 const ProjectListContainer = styled.div`
   width: 100%;

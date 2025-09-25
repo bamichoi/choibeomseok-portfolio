@@ -1,4 +1,4 @@
-import { ResearchList } from "@/widgets";
+import { ResearchList } from "@/widgets/research";
 import styled from "styled-components";
 
 export const Research = () => {

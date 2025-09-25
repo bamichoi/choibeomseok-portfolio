@@ -3,15 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
 import { Autoplay } from "swiper/modules";
-import Project from "./Project";
+import { Project } from "./Project";
 import styled from "styled-components";
-import { PROJECTS } from "@/entities/project/model/projects";
+import { PROJECTS } from "@/entities/project";
 
 interface SlideProps {
   onClick: (id: number) => void;
 }
 
-const ProjectSlide = ({ onClick }: SlideProps) => {
+export const ProjectSlide = ({ onClick }: SlideProps) => {
   return (
     <StyledSwiper
       direction="vertical"
@@ -42,7 +42,6 @@ const ProjectSlide = ({ onClick }: SlideProps) => {
   );
 };
 
-export { ProjectSlide };
 
 const StyledSwiper = styled(Swiper)`
   width: 200px;

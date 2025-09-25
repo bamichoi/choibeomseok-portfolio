@@ -5,7 +5,7 @@ interface ProjectProps {
   logoSrc: string;
 }
 
-const Project = ({ title, logoSrc }: ProjectProps) => {
+export const Project = ({ title, logoSrc }: ProjectProps) => {
   return (
     <ProjectContainer>
       <LogoWrapper>
@@ -16,7 +16,6 @@ const Project = ({ title, logoSrc }: ProjectProps) => {
   );
 };
 
-export { Project };
 
 const ProjectContainer = styled.div`
   width: 230px;

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { AnimatePresence, motion } from "framer-motion";
-import useToastStore from "@/shared/model/toastStore";
-import Portal from "./portal";
+import { useToastStore } from "@/shared/model";
+import { Portal } from "./portal";
 
-const Toast = () => {
+export const Toast = () => {
   const { isShowing, message } = useToastStore();
 
   return (
@@ -25,7 +25,6 @@ const Toast = () => {
   );
 };
 
-export default Toast;
 
 const ToastContainer = styled.div`
   position: fixed;

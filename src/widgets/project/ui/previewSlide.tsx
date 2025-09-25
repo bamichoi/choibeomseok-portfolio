@@ -9,7 +9,7 @@ interface PreviewSlideProps {
   images?: string[];
 }
 
-const PreviewSlide = ({ images }: PreviewSlideProps) => {
+export const PreviewSlide = ({ images }: PreviewSlideProps) => {
   const handleImageClick = (image: string) => {
     const width = 1000;
     const height = 700;
@@ -41,7 +41,6 @@ const PreviewSlide = ({ images }: PreviewSlideProps) => {
   );
 };
 
-export { PreviewSlide };
 
 const StyledSwiper = styled(Swiper)`
   width: 26rem;

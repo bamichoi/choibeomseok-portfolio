@@ -1,7 +1,7 @@
-import { RESEARCH_DATA } from "@/entities/research/model/research";
+import { RESEARCH_DATA } from "@/entities/research";
 import styled from "styled-components";
 
-const ResearchList = () => {
+export const ResearchList = () => {
   const handleArticleClick = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -23,7 +23,6 @@ const ResearchList = () => {
   );
 };
 
-export { ResearchList };
 
 const ResearchListContainer = styled.div`
   width: 100%;

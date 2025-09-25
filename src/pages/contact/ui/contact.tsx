@@ -2,7 +2,7 @@ import styled from "styled-components";
 import GithubSVG from "@shared/ui/assets/icons/github.svg?react";
 import LinkedinSVG from "@shared/ui/assets/icons/linkedin.svg?react";
 import MailSVG from "@shared/ui/assets/icons/mail.svg?react";
-import useToastStore from "@/shared/model/toastStore";
+import { useToastStore } from "@/shared/model";
 
 export const Contact = () => {
   const { showToast } = useToastStore();
@@ -41,7 +41,6 @@ export const Contact = () => {
   );
 };
 
-export default Contact;
 
 const ContactContainer = styled.div`
   width: 100%;

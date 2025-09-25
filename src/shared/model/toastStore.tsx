@@ -16,7 +16,7 @@ interface UseToastStoreProps {
   closeToast: () => void;
 }
 
-const useToastStore = create<UseToastStoreProps>((set) => ({
+export const useToastStore = create<UseToastStoreProps>((set) => ({
   message: "",
   type: "notice",
   isShowing: false,
@@ -45,4 +45,3 @@ const useToastStore = create<UseToastStoreProps>((set) => ({
     }),
 }));
 
-export default useToastStore;

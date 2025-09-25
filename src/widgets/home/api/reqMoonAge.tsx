@@ -1,4 +1,4 @@
-import request from "@/shared/api/request";
+import { request } from "@/shared/api";
 
 interface ReqMoonAgeArgs {
   solYear: string;

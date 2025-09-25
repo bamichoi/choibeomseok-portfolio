@@ -60,7 +60,6 @@ export const Etc = () => {
   );
 };
 
-export default Etc;
 
 const EtcContainer = styled.div`
   width: 100%;
