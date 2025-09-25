@@ -10,7 +10,7 @@ const ProjectList = ({ onClick }: ProjectListProps) => {
     <ProjectListContainer>
       <Title>Side Project List</Title>
       <Projects>
-        {PROJECTS.slice(0, 5).map((project) => (
+        {PROJECTS.map((project) => (
           <Project key={project.id} onClick={() => onClick(project.id)}>
             <ProjectTitle>{project.title}</ProjectTitle>
             <ProjectSubtitle>{project.subtitle}</ProjectSubtitle>

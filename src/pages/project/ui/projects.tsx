@@ -1,20 +1,22 @@
 import styled from "styled-components";
 import ProjectSlide from "@/widgets/project/ui/projectSlide";
-import { useState } from "react";
-import Summary from "@/widgets/project/ui/projectSummary";
+import ProjectSummary from "@/widgets/project/ui/projectSummary";
 import ProjectList from "@/widgets/project/ui/projectList";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Projects = () => {
-  const [selectedProjectId, setSelectedProjectId] = useState<number>();
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const selectedProjectId = id ? parseInt(id) : undefined;
 
-  const handleSlideClick = (id: number) => {
-    setSelectedProjectId(id);
+  const handleSlideClick = (projectId: number) => {
+    navigate(`/projects/${projectId}`);
   };
 
   return (
     <ProjectsContainer>
       {selectedProjectId ? (
-        <Summary selectedProjectId={selectedProjectId} />
+        <ProjectSummary selectedProjectId={selectedProjectId} />
       ) : (
         <ProjectList onClick={handleSlideClick} />
       )}

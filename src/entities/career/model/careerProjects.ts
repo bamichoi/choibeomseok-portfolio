@@ -103,7 +103,7 @@ export const BLISS_PROJECTS = [
   {
     id: 2,
     summary: {
-      projectTitle: "올해의 행복",
+      projectTitle: "올해의 행복(The Annual Bliss)",
       description: "BLISS PROJECT #1",
     },
     tasks: [

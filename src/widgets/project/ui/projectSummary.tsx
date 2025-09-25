@@ -40,16 +40,23 @@ const ProjectSummary = ({ selectedProjectId }: ProjectSummaryProps) => {
         <PropertyWrapper>
           <PropertyText>stack :</PropertyText>
           <Stacks>
-            {project?.stacks.map((stackLogo) => (
-              <StackImage src={stackLogo} />
+            {project?.stacks.map((stackLogo: string, index: number) => (
+              <StackImage key={index} src={stackLogo} />
             ))}
           </Stacks>
         </PropertyWrapper>
       </Contents>
       <Description>{project?.description}</Description>
-      <BtnWraper>
-        <DetailBtn>자세히</DetailBtn>
-      </BtnWraper>
+      {project?.tasks && (
+        <TasksSection>
+          <TasksTitle>Tasks</TasksTitle>
+          <TasksList>
+            {project.tasks.map((task, index) => (
+              <Task key={index}>{task}</Task>
+            ))}
+          </TasksList>
+        </TasksSection>
+      )}
     </ProjectSummaryContainer>
   );
 };
@@ -78,6 +85,7 @@ const TitleWrapper = styled.div`
 const Logo = styled.img`
   width: 3rem;
   height: 3rem;
+  border-radius: 8px;
 `;
 
 const Title = styled.div`
@@ -119,23 +127,6 @@ const StackImage = styled.img`
   height: 2rem;
 `;
 
-const DetailBtn = styled.div`
-  cursor: pointer;
-  width: 6rem;
-  height: 3rem;
-  background-color: #9bb7d4;
-  color: #1c4e89;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-
-  &:hover {
-    color: white;
-  }
-`;
-
 const PropertyWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -148,21 +139,43 @@ const Date = styled.div`
   font-weight: medium;
 `;
 
-const BtnWraper = styled.div`
-  width: 700px;
-  display: flex;
-  justify-content: end;
-`;
-
 const Description = styled.div`
   font-size: 1rem;
   height: fit-content;
   color: #9bb7d4;
   font-weight: medium;
   margin-top: 40px;
-  width: 700px;
+  width: 600px;
   line-height: 150%;
   margin-bottom: 0.5rem;
+`;
+
+const TasksSection = styled.div`
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+const TasksTitle = styled.div`
+  width: fit-content;
+  padding: 6px;
+  border-radius: 2px;
+  color: #1c4e89;
+  font-size: 1.2rem;
+  font-weight: medium;
+  background-color: #9bb7d4;
+`;
+
+const TasksList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+const Task = styled.div`
+  color: #9bb7d4;
+  font-size: 1rem;
 `;
 
 const SiteLinkBtn = styled.div`
