@@ -84,7 +84,7 @@ export const Philosophy = () => {
           </PhilosophyItem>
           <PhilosophyItem>
             <ItemTitleWrapper onClick={() => handleToggle(3)}>
-              <ItemTitle>3. 사랑으로 일한다.</ItemTitle>
+              <ItemTitle>3. 사랑으로 일한다는 것.</ItemTitle>
               <ToggleIcon $isExpanded={expandedItemId === 3}>
                 {expandedItemId === 2 ? "▼" : "▲"}
               </ToggleIcon>
@@ -140,10 +140,33 @@ export const Philosophy = () => {
 
 const PhilosophyContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 100px;
   display: flex;
   justify-content: center;
+  overflow-y: auto;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #9bb7d4;
+    border-radius: 4px;
+    opacity: 0.5;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9bb7d4;
+    opacity: 0.8;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: #9bb7d4 transparent;
 `;
 
 const ContentWrapper = styled.div`
