@@ -1,4 +1,4 @@
-import { requestMoonAge } from "@/widgets/home/api/reqMoonAge";
+import { requestMoonAge } from "@/widgets";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
@@ -96,7 +96,7 @@ const MoonAge = () => {
   );
 };
 
-export default MoonAge;
+export { MoonAge };
 
 const MoonAgeContainer = styled.div`
   display: flex;

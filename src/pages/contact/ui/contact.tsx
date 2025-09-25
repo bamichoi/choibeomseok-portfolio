@@ -4,7 +4,7 @@ import LinkedinSVG from "@shared/ui/assets/icons/linkedin.svg?react";
 import MailSVG from "@shared/ui/assets/icons/mail.svg?react";
 import useToastStore from "@/shared/model/toastStore";
 
-const Contact = () => {
+export const Contact = () => {
   const { showToast } = useToastStore();
 
   const handleIconClick = (url: string) => {

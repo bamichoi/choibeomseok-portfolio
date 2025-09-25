@@ -26,7 +26,7 @@ const CareerProject = ({
   );
 };
 
-export default CareerProject;
+export { CareerProject };
 
 const CareerProjectContainer = styled.div<{ $isSelected: boolean }>`
   cursor: pointer;

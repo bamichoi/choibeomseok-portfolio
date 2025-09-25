@@ -2,9 +2,9 @@
 // Following FSD architecture - pages compose features, widgets, entities, and shared modules
 
 // Page Components
-export { default as Home } from './home/ui/home';
-export { default as Career } from './career/ui/career';
-export { default as Contact } from './contact/ui/contact';
-export { default as Projects } from './project/ui/projects';
-export { default as Research } from './research/ui/research';
-export { default as Etc } from './etc/ui/etc';
+export { Home } from './home/ui/Home';
+export { Career } from './career/ui/Career';
+export { Contact } from './contact/ui/Contact';
+export { Projects } from './project/ui/Projects';
+export { Research } from './research/ui/Research';
+export { Etc } from './etc/ui/Etc';

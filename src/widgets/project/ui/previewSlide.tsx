@@ -41,7 +41,7 @@ const PreviewSlide = ({ images }: PreviewSlideProps) => {
   );
 };
 
-export default PreviewSlide;
+export { PreviewSlide };
 
 const StyledSwiper = styled(Swiper)`
   width: 26rem;

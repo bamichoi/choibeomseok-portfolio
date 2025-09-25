@@ -1,15 +1,13 @@
-import ResearchList from "@/widgets/research/ui/reasearchList";
+import { ResearchList } from "@/widgets";
 import styled from "styled-components";
 
-const Research = () => {
+export const Research = () => {
   return (
     <ResearchContainer>
       <ResearchList />
     </ResearchContainer>
   );
 };
-
-export default Research;
 
 const ResearchContainer = styled.div`
   width: 100%;

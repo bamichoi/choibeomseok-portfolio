@@ -21,7 +21,7 @@ const ProjectList = ({ onClick }: ProjectListProps) => {
   );
 };
 
-export default ProjectList;
+export { ProjectList };
 
 const ProjectListContainer = styled.div`
   width: 100%;

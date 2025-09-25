@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
 import { Autoplay } from "swiper/modules";
-import Project from "./project";
+import Project from "./Project";
 import styled from "styled-components";
 import { PROJECTS } from "@/entities/project/model/projects";
 
@@ -42,7 +42,7 @@ const ProjectSlide = ({ onClick }: SlideProps) => {
   );
 };
 
-export default ProjectSlide;
+export { ProjectSlide };
 
 const StyledSwiper = styled(Swiper)`
   width: 200px;

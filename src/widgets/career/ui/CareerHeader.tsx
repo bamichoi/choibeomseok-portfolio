@@ -34,7 +34,7 @@ const CareerHeader = ({ title, period, logo, isExpanded, onToggle }: CareerHeade
   );
 };
 
-export default CareerHeader;
+export { CareerHeader };
 
 const TitleWrapper = styled.div`
   width: 100%;

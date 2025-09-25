@@ -4,7 +4,7 @@ import PerugiaSVG from "@shared/ui/assets/images/univLogo/perugia.svg?react";
 import RomaSVG from "@shared/ui/assets/images/univLogo/roma.svg?react";
 import PetSVG from "@shared/ui/assets/images/hangboghi.svg?react";
 
-const Etc = () => {
+export const Etc = () => {
   const handleCVClick = () => {
     window.open(
       "https://buttoned-garage-49e.notion.site/Curriculum-vitae-15eb67f2506a8001913dfbd1b13215d5?pvs=4",

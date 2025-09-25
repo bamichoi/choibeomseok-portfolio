@@ -23,7 +23,7 @@ const ResearchList = () => {
   );
 };
 
-export default ResearchList;
+export { ResearchList };
 
 const ResearchListContainer = styled.div`
   width: 100%;

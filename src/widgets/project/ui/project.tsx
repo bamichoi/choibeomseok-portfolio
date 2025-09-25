@@ -16,7 +16,7 @@ const Project = ({ title, logoSrc }: ProjectProps) => {
   );
 };
 
-export default Project;
+export { Project };
 
 const ProjectContainer = styled.div`
   width: 230px;

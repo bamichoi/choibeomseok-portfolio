@@ -59,7 +59,7 @@ const TaskDetail = ({
   );
 };
 
-export default TaskDetail;
+export { TaskDetail };
 
 const TaskDetailContainer = styled.div`
   display: flex;

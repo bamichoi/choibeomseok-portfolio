@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { useState } from "react";
-import CareerSummary from "@/widgets/career/ui/CareerSummary";
-import TaskDetail from "@/widgets/career/ui/taskDetail";
+import { CareerSummary, TaskDetail } from "@/widgets";
 import { CAREER_DATA } from "@/entities/career/model/careerData";
 
-const Career = () => {
+export const Career = () => {
   const [selectedProjectId, setSelectedProjectId] = useState(1);
   const [expandedCareerId, setExpandedCareerId] = useState<string>("tmax");
 
@@ -45,7 +44,6 @@ const Career = () => {
   );
 };
 
-export default Career;
 
 const CareerContainer = styled.div`
   display: flex;

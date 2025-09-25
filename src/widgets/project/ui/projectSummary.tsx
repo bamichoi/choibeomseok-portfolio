@@ -1,6 +1,6 @@
 import { PROJECTS } from "@/entities/project/model/projects";
 import styled from "styled-components";
-import PreviewSlide from "./previewSlide";
+import PreviewSlide from "./PreviewSlide";
 
 interface ProjectSummaryProps {
   selectedProjectId: number;
@@ -61,7 +61,7 @@ const ProjectSummary = ({ selectedProjectId }: ProjectSummaryProps) => {
   );
 };
 
-export default ProjectSummary;
+export { ProjectSummary };
 
 const ProjectSummaryContainer = styled.div`
   width: 100%;

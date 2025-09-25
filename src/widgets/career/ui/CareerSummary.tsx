@@ -55,7 +55,7 @@ const CareerSummary = ({
   );
 };
 
-export default CareerSummary;
+export { CareerSummary };
 
 const Summary = styled.div`
   width: 100%;

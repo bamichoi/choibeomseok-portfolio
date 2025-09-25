@@ -1,7 +1,7 @@
 import MoonAge from "@/widgets/home/ui/moonAge";
 import styled from "styled-components";
 
-const Home = () => {
+export const Home = () => {
   return (
     <HomeContainer>
       <Centerpeice>

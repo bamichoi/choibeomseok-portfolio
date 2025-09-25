@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import ProjectSlide from "@/widgets/project/ui/projectSlide";
-import ProjectSummary from "@/widgets/project/ui/projectSummary";
-import ProjectList from "@/widgets/project/ui/projectList";
+import { ProjectSlide, ProjectSummary, ProjectList } from "@/widgets";
 import { useParams, useNavigate } from "react-router-dom";
 
-const Projects = () => {
+export const Projects = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const selectedProjectId = id ? parseInt(id) : undefined;
@@ -25,7 +23,6 @@ const Projects = () => {
   );
 };
 
-export default Projects;
 
 const ProjectsContainer = styled.div`
   width: 100%;
