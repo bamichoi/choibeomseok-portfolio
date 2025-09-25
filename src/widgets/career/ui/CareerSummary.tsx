@@ -61,7 +61,10 @@ const Summary = styled.div`
 `;
 
 const TasksWrapper = styled.div<{ $isExpanded: boolean }>`
-  display: ${({ $isExpanded }) => ($isExpanded ? "block" : "none")};
+  max-height: ${({ $isExpanded }) => ($isExpanded ? "1000px" : "0")};
+  opacity: ${({ $isExpanded }) => ($isExpanded ? "1" : "0")};
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 `;
 
 const Tasks = styled.div`
