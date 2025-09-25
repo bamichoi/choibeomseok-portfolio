@@ -11,12 +11,12 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: "@", replacement: resolve("src") },
-      { find: "@app", replacement: resolve("src/a_app") },
-      { find: "@pages", replacement: resolve("src/b_pages") },
-      { find: "@widgets", replacement: resolve("src/c_widgets") },
-      { find: "@features", replacement: resolve("src/d_features") },
-      { find: "@entities", replacement: resolve("src/e_entities") },
-      { find: "@shared", replacement: resolve("src/f_shared") },
+      { find: "@app", replacement: resolve("src/app") },
+      { find: "@pages", replacement: resolve("src/pages") },
+      { find: "@widgets", replacement: resolve("src/widgets") },
+      { find: "@features", replacement: resolve("src/features") },
+      { find: "@entities", replacement: resolve("src/entities") },
+      { find: "@shared", replacement: resolve("src/shared") },
     ],
   },
 });

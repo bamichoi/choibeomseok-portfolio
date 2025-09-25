@@ -1,0 +1,72 @@
+import styled from "styled-components";
+import CareerHeader from "./CareerHeader";
+import CareerProject from "./careerProject";
+import type { Project } from "@shared/types/career";
+
+interface CareerSummaryProps {
+  id: string;
+  title: string;
+  period: string;
+  logo?: React.ComponentType | string;
+  projects: Project[];
+  isExpanded: boolean;
+  onToggle: (id: string) => void;
+  selectedProjectId: number;
+  onProjectClick: (id: number) => void;
+}
+
+const CareerSummary = ({
+  id,
+  title,
+  period,
+  logo,
+  projects,
+  isExpanded,
+  onToggle,
+  selectedProjectId,
+  onProjectClick,
+}: CareerSummaryProps) => {
+  return (
+    <Summary>
+      <CareerHeader
+        title={title}
+        period={period}
+        logo={logo}
+        isExpanded={isExpanded}
+        onToggle={() => onToggle(id)}
+      />
+      <TasksWrapper $isExpanded={isExpanded}>
+        <Tasks>
+          {projects.map(
+            ({ id, summary: { projectTitle, description } }) => (
+              <CareerProject
+                key={id}
+                id={id}
+                projectTitle={projectTitle}
+                description={description}
+                onClick={onProjectClick}
+                isSelected={id === selectedProjectId}
+              />
+            )
+          )}
+        </Tasks>
+      </TasksWrapper>
+    </Summary>
+  );
+};
+
+export default CareerSummary;
+
+const Summary = styled.div`
+  width: 100%;
+`;
+
+const TasksWrapper = styled.div<{ $isExpanded: boolean }>`
+  display: ${({ $isExpanded }) => ($isExpanded ? "block" : "none")};
+`;
+
+const Tasks = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+`;
