@@ -4,7 +4,6 @@ import {
   ViteSVG,
   TypescriptSVG,
   StyledComponentsSVG,
-  BedrockSVG,
   LambdaSVG,
   BunSVG,
   ChatGPTSVG,
@@ -17,6 +16,9 @@ import {
   SwrSVG,
   ApexSVG,
   JenkinsSVG,
+  ExpoSVG,
+  ReactQuerySVG,
+  ZustandSVG,
 } from "@shared/assets";
 
 export const TMAX_PROJECTS = [
@@ -147,6 +149,7 @@ export const BLISS_PROJECTS = [
     },
     tasks: [
       "- React Native 및 Expo를 기반의 모바일 앱 개발",
+      "- Tanstack Query를 활용한 클라이언트 사이드 데이터 관리 최적화",
       "- Expo Sqlite를 활용한 앱 로컬 스토리지 기반의 DB관리",
       "- 다양한 expo 라이브러리를 활용한 기능 개발",
       "- expo-file-system/next를 활용한 사진 파일 관리",
@@ -155,13 +158,11 @@ export const BLISS_PROJECTS = [
     ],
     stacks: [
       ReactSVG,
+      ExpoSVG,
       TypescriptSVG,
-      ViteSVG,
-      BunSVG,
-      JotaiSVG,
+      ZustandSVG,
+      ReactQuerySVG,
       ReactHookFormSVG,
-      BedrockSVG,
-      LambdaSVG,
     ],
   },
 ];

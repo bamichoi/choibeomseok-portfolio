@@ -63,8 +63,13 @@ export const MoonAge = () => {
     getMoonAge();
   }, []);
 
-  const phase = lunAge ? (lunAge % 29.5) / 29.5 : 0.4;
   const size = 130;
+
+  if (lunAge === undefined) {
+    return null;
+  }
+
+  const phase = (lunAge % 29.5) / 29.5;
   const lightPath = getMoonPath(phase, size);
 
   return (

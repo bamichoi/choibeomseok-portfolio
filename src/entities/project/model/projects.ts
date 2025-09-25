@@ -81,13 +81,21 @@ export const PROJECTS = [
     subtitle: "연간 리캡형 라이프 기록 애플리케이션",
     url: "https://apps.apple.com/kr/app/%EC%98%AC%ED%95%B4%EC%9D%98-%ED%96%89%EB%B3%B5/id6751865635",
     images: [AnnualBliss1PNG, AnnualBliss2PNG, AnnualBliss3PNG],
-    stacks: [ReactSVG, ExpoSVG, TypescriptSVG, ZustandSVG, ReactHookFormSVG],
+    stacks: [
+      ReactSVG,
+      ExpoSVG,
+      TypescriptSVG,
+      ZustandSVG,
+      ReactQuerySVG,
+      ReactHookFormSVG,
+    ],
     startDate: "2025.08",
     endDate: "현재",
     description:
       "한 해의 순간들을 기록하고 기념 할 수 있는 연간 리캡형 라이프 기록 애플리케이션입니다.",
     tasks: [
       "- React Native 및 Expo를 기반의 모바일 앱 개발",
+      "- Tanstack Query를 활용한 클라이언트 사이드 데이터 관리 최적화",
       "- Expo Sqlite를 활용한 앱 로컬 스토리지 기반의 DB관리",
       "- 다양한 expo 라이브러리를 활용한 기능 개발",
       "- expo-file-system/next를 활용한 사진 파일 관리",
