@@ -8,7 +8,7 @@ interface ProjectListProps {
 export const ProjectList = ({ onClick }: ProjectListProps) => {
   return (
     <ProjectListContainer>
-      <Title>Side Project List</Title>
+      <Title>Project List</Title>
       <Projects>
         {PROJECTS.map((project) => (
           <Project key={project.id} onClick={() => onClick(project.id)}>
@@ -20,7 +20,6 @@ export const ProjectList = ({ onClick }: ProjectListProps) => {
     </ProjectListContainer>
   );
 };
-
 
 const ProjectListContainer = styled.div`
   width: 100%;
