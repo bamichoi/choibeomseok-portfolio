@@ -109,6 +109,9 @@ export const BLISS_PROJECTS = [
     tasks: [
       "- React Native 및 Expo를 기반의 모바일 앱 개발",
       "- Expo Sqlite를 활용한 앱 로컬 스토리지 기반의 DB관리",
+      "- 다양한 expo 라이브러리를 활용한 기능 개발",
+      "- expo-file-system/next를 활용한 사진 파일 관리",
+      "- 클로즈 베타 테스트 진행을 통한 UX 피드백 반영 및 개선",
       "- AppStore 배포 및 운영중 / Android 내부 테스트 진행중",
     ],
   },
