@@ -1,3 +1,5 @@
+import type { SideProject } from "@shared/types";
+
 /* stack icons */
 import {
   ReactSVG,
@@ -24,6 +26,17 @@ import {
   JotaiSVG,
   ExpoSVG,
   ZustandSVG,
+  NextjsSVG,
+  ThreejsSVG,
+  DanjisenLogo,
+  DanjisenFullLogo,
+  Danjisen1PNG,
+  Danjisen2PNG,
+  Danjisen3PNG,
+  LatinoWalkingLogo,
+  LatinoWalkingFullLogo,
+  LatinoWalking2PNG,
+  LatinoWalking1PNG,
 } from "@shared/assets";
 
 /* preview images */
@@ -72,14 +85,76 @@ import {
   AnnualBlissFullLogo,
 } from "@shared/assets";
 
-export const PROJECTS = [
+export const PROJECTS: SideProject[] = [
+  {
+    id: 11,
+    title: "라틴어 산책",
+    logo: LatinoWalkingLogo,
+    fullLogo: LatinoWalkingFullLogo,
+    subtitle: "데일리 라틴어 레터카드 서비스",
+    appStoreUrl:
+      "https://apps.apple.com/kr/app/%EB%9D%BC%ED%8B%B4%EC%96%B4-%EC%82%B0%EC%B1%85/id6753975649",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.blissproject.latinowalking",
+    images: [LatinoWalking1PNG, LatinoWalking2PNG],
+    stacks: [
+      ReactSVG,
+      ExpoSVG,
+      NextjsSVG,
+      TypescriptSVG,
+      ZustandSVG,
+      ThreejsSVG,
+      ReactHookFormSVG,
+    ],
+    startDate: "2025.10",
+    endDate: "2025.10",
+    description:
+      "매일 아침 오늘의 라틴어를 통해서 잠깐의 읽을거리와 생각거리를 제공하는 서비스입니다.",
+    tasks: [
+      "- 데일리 로컬 푸시 알림 구현",
+      "- PlayStore/AppStore 배포 및 운영중",
+    ],
+  },
+  {
+    id: 10,
+    title: "단시점",
+    logo: DanjisenLogo,
+    fullLogo: DanjisenFullLogo,
+    subtitle: "간편하고 정확한 전통 주역점",
+    url: "https://danjisen.com/",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.beomseokchoi.danjisen",
+    images: [Danjisen1PNG, Danjisen2PNG, Danjisen3PNG],
+    stacks: [
+      ReactSVG,
+      ExpoSVG,
+      NextjsSVG,
+      TypescriptSVG,
+      ZustandSVG,
+      ThreejsSVG,
+      ReactHookFormSVG,
+    ],
+    startDate: "2025.10",
+    endDate: "2025.10",
+    description:
+      "주역점의 한 종류인 단시점으로 내 질문에 대한 운기의 흐름을 점쳐볼 수 있는 서비스입니다.",
+    tasks: [
+      "- Three.js를 활용한 3D 주사위 던지기 구현",
+      "- React Native 앱을 포팅한 Next.js 웹버전 개발",
+      "- AWS lambda-GPT API를 활용한 AI 응답 생성",
+      "- PlayStore/Web 배포 및 운영중",
+    ],
+  },
   {
     id: 9,
     title: "올해의 행복",
     logo: AnnualBlissLogo,
     fullLogo: AnnualBlissFullLogo,
     subtitle: "연간 리캡형 라이프 기록 애플리케이션",
-    url: "https://apps.apple.com/kr/app/%EC%98%AC%ED%95%B4%EC%9D%98-%ED%96%89%EB%B3%B5/id6751865635",
+    appStoreUrl:
+      "https://apps.apple.com/kr/app/%EC%98%AC%ED%95%B4%EC%9D%98-%ED%96%89%EB%B3%B5/id6751865635",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.blissproject.theannualbliss&pcampaignid=web_share",
     images: [AnnualBliss1PNG, AnnualBliss2PNG, AnnualBliss3PNG],
     stacks: [
       ReactSVG,
@@ -90,11 +165,11 @@ export const PROJECTS = [
       ReactHookFormSVG,
     ],
     startDate: "2025.08",
-    endDate: "현재",
+    endDate: "2025.09",
     description:
       "한 해의 순간들을 기록하고 기념 할 수 있는 연간 리캡형 라이프 기록 애플리케이션입니다.",
     tasks: [
-      "- React Native 및 Expo를 기반의 모바일 앱 개발",
+      "- React Native(Expo) 기반의 모바일 앱 개발",
       "- Tanstack Query를 활용한 클라이언트 사이드 데이터 관리 최적화",
       "- Expo Sqlite를 활용한 앱 로컬 스토리지 기반의 DB관리",
       "- 다양한 expo 라이브러리를 활용한 기능 개발",

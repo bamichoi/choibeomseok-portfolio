@@ -1,3 +1,9 @@
+export interface Article {
+  id: number;
+  title: string;
+  url: string;
+}
+
 export interface Project {
   id: number;
   summary: {
@@ -6,6 +12,7 @@ export interface Project {
   };
   tasks: string[];
   stacks: string[];
+  articles?: Article[];
 }
 
 export interface CareerItem {

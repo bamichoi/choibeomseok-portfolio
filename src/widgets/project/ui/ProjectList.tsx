@@ -23,12 +23,13 @@ export const ProjectList = ({ onClick }: ProjectListProps) => {
 
 const ProjectListContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 50px;
+  padding: 50px 0;
 `;
 
 const Title = styled.div`
@@ -37,9 +38,12 @@ const Title = styled.div`
 `;
 
 const Projects = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  grid-auto-flow: column;
+  gap: 15px 40px;
+  justify-content: center;
+  align-items: start;
 `;
 
 const ProjectTitle = styled.div``;

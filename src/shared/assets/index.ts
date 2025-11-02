@@ -32,6 +32,7 @@ import JenkinsImg from "./images/stackLogo/jenkins.png";
 import VueImg from "./images/stackLogo/vue.png";
 import NuxtImg from "./images/stackLogo/nuxt.png";
 import ApexImg from "./images/stackLogo/apex.png";
+import ThreejsImg from "./images/stackLogo/threejs.png";
 
 export const ReactSVG = ReactImg;
 export const ReactHookFormSVG = ReactHookFormImg;
@@ -66,6 +67,7 @@ export const JenkinsSVG = JenkinsImg;
 export const VueSVG = VueImg;
 export const NuxtSVG = NuxtImg;
 export const ApexSVG = ApexImg;
+export const ThreejsSVG = ThreejsImg;
 
 // Preview Images
 import Cineacca1Img from "./images/preview/cineacca.jpg";
@@ -90,6 +92,12 @@ import CoffeeBirdyImg from "./images/preview/coffeeBirdy.png";
 import AnnualBliss1Img from "./images/preview/annualBliss.png";
 import AnnualBliss2Img from "./images/preview/annualBliss2.png";
 import AnnualBliss3Img from "./images/preview/annualBliss3.png";
+import Danjisen1Img from "./images/preview/danjisen1.png";
+import Danjisen2Img from "./images/preview/danjisen2.png";
+import Danjisen3Img from "./images/preview/danjisen3.png";
+import Danjisen4Img from "./images/preview/danjisen4.png";
+import LatinoWalking1Img from "./images/preview/latinoWalking1.png";
+import LatinoWalking2Img from "./images/preview/latinoWalking2.png";
 
 export const Cineacca1SVG = Cineacca1Img;
 export const Cineacca2SVG = Cineacca2Img;
@@ -113,6 +121,12 @@ export const CoffeeBirdyPNG = CoffeeBirdyImg;
 export const AnnualBliss1PNG = AnnualBliss1Img;
 export const AnnualBliss2PNG = AnnualBliss2Img;
 export const AnnualBliss3PNG = AnnualBliss3Img;
+export const Danjisen1PNG = Danjisen1Img;
+export const Danjisen2PNG = Danjisen2Img;
+export const Danjisen3PNG = Danjisen3Img;
+export const Danjisen4PNG = Danjisen4Img;
+export const LatinoWalking1PNG = LatinoWalking1Img;
+export const LatinoWalking2PNG = LatinoWalking2Img;
 
 // Project Logos
 import StagecueImg from "./images/projectLogo/stagecue.svg";
@@ -131,6 +145,10 @@ import CoffeeBirdyLogoImg from "./images/projectLogo/coffeeBirdy.png";
 import CoffeeBirdyFullLogoImg from "./images/projectLogo/coffeeBirdy_full.png";
 import AnnualBlissLogoImg from "./images/projectLogo/annualBliss.png";
 import AnnualBlissFullLogoImg from "./images/projectLogo/annualBliss_full.png";
+import DanjisenLogoImg from "./images/projectLogo/danjisen.png";
+import DanjisenFullLogoImg from "./images/projectLogo/danjisen_full.png";
+import LatinoWalkingLogoImg from "./images/projectLogo/latinoWalking.png";
+import LatinoWalkingFullLogoImg from "./images/projectLogo/latinoWalking_full.png";
 
 export const StagecueLogo = StagecueImg;
 export const StagecueFullLogo = StagecueFullImg;
@@ -148,6 +166,10 @@ export const CoffeeBirdyLogo = CoffeeBirdyLogoImg;
 export const CoffeeBirdyFullLogo = CoffeeBirdyFullLogoImg;
 export const AnnualBlissLogo = AnnualBlissLogoImg;
 export const AnnualBlissFullLogo = AnnualBlissFullLogoImg;
+export const DanjisenLogo = DanjisenLogoImg;
+export const DanjisenFullLogo = DanjisenFullLogoImg;
+export const LatinoWalkingLogo = LatinoWalkingLogoImg;
+export const LatinoWalkingFullLogo = LatinoWalkingFullLogoImg;
 
 // Career Logos
 import TmaxLogoImg from "./images/careerLogo/tmaxLogo.svg";

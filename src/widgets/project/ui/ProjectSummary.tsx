@@ -9,10 +9,8 @@ interface ProjectSummaryProps {
 export const ProjectSummary = ({ selectedProjectId }: ProjectSummaryProps) => {
   const project = PROJECTS.find((project) => project.id === selectedProjectId);
 
-  const handleSiteLinkClick = () => {
-    if (project?.url) {
-      window.open(project?.url, "_blank", "noopener,noreferrer");
-    }
+  const handleSiteLinkClick = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -21,9 +19,23 @@ export const ProjectSummary = ({ selectedProjectId }: ProjectSummaryProps) => {
         <Logo src={project?.logo} />
         <Title>
           {project?.title}
-          {project?.url && (
-            <SiteLinkBtn onClick={handleSiteLinkClick}>둘러보기</SiteLinkBtn>
-          )}
+          <ButtonsContainer>
+            {project?.url && (
+              <SiteLinkBtn onClick={() => handleSiteLinkClick(project.url!)}>
+                둘러보기(Web)
+              </SiteLinkBtn>
+            )}
+            {project?.appStoreUrl && (
+              <SiteLinkBtn onClick={() => handleSiteLinkClick(project.appStoreUrl!)}>
+                둘러보기(iOS)
+              </SiteLinkBtn>
+            )}
+            {project?.playStoreUrl && (
+              <SiteLinkBtn onClick={() => handleSiteLinkClick(project.playStoreUrl!)}>
+                둘러보기(Android)
+              </SiteLinkBtn>
+            )}
+          </ButtonsContainer>
         </Title>
       </TitleWrapper>
       <Subtitle>{project?.subtitle}</Subtitle>
@@ -94,6 +106,11 @@ const Title = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+`;
+
+const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 10px;
 `;
 
 const Subtitle = styled.div`
@@ -178,8 +195,8 @@ const Task = styled.div`
 `;
 
 const SiteLinkBtn = styled.div`
-  width: 70px;
-  height: 30px;
+  width: 120px;
+  height: 35px;
   background-color: #9bb7d4;
   cursor: pointer;
   color: #1c4e89;

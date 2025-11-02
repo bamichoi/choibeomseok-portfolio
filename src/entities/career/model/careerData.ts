@@ -23,7 +23,7 @@ export const CAREER_DATA: CareerItem[] = [
   },
   {
     id: "bliss",
-    title: "BLISS PROJECT",
+    title: "Studio Bliss",
     period: "2025.07 - 현재",
     logo: BlissLogo,
     projects: BLISS_PROJECTS,

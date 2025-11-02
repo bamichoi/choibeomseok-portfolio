@@ -3,3 +3,6 @@
 
 // Career Types
 export type { Project, CareerItem } from './career';
+
+// Project Types
+export type { SideProject } from './project';

@@ -19,7 +19,10 @@ import {
   ExpoSVG,
   ReactQuerySVG,
   ZustandSVG,
+  NextjsSVG,
+  ThreejsSVG,
 } from "@shared/assets";
+import { RESEARCH_DATA } from "@/entities/research";
 
 export const TMAX_PROJECTS = [
   {
@@ -47,6 +50,7 @@ export const TMAX_PROJECTS = [
       "- TTS 체험 기능 및 Parallax Scrolling UI 개발",
     ],
     stacks: [ReactSVG, TypescriptSVG, StyledComponentsSVG, WebsocketSVG],
+    articles: [RESEARCH_DATA[0]],
   },
   {
     id: 4,
@@ -122,7 +126,7 @@ export const BLISS_PROJECTS = [
     id: 1,
     summary: {
       projectTitle: "카르마의 평행우주(Karma's Parallel Universe)",
-      description: "BLISS PROJECT #0",
+      description: "스토리텔링형 평행세계 시뮬레이터",
     },
     tasks: [
       "- React Hook Form과 Zod를 이용한 Form Validation",
@@ -145,16 +149,16 @@ export const BLISS_PROJECTS = [
     id: 2,
     summary: {
       projectTitle: "올해의 행복(The Annual Bliss)",
-      description: "BLISS PROJECT #1",
+      description: "연간 리캡형 라이프 기록앱",
     },
     tasks: [
-      "- React Native 및 Expo를 기반의 모바일 앱 개발",
+      "- React Native(Expo) 기반의 모바일 앱 개발",
       "- Tanstack Query를 활용한 클라이언트 사이드 데이터 관리 최적화",
       "- Expo Sqlite를 활용한 앱 로컬 스토리지 기반의 DB관리",
       "- 다양한 expo 라이브러리를 활용한 기능 개발",
       "- expo-file-system/next를 활용한 사진 파일 관리",
       "- 클로즈 베타 테스트 진행을 통한 UX 피드백 반영 및 개선",
-      "- AppStore 배포 및 운영중 / Android 내부 테스트 진행중",
+      "- PlayStore/AppStore 배포 및 운영중",
     ],
     stacks: [
       ReactSVG,
@@ -164,5 +168,36 @@ export const BLISS_PROJECTS = [
       ReactQuerySVG,
       ReactHookFormSVG,
     ],
+  },
+  {
+    id: 3,
+    summary: {
+      projectTitle: "단시점(斷時占, Danjisen)",
+      description: "간편하고 정확한 전통 주역점",
+    },
+    tasks: [
+      "- Three.js를 활용한 3D 주사위 던지기 구현",
+      "- React Native 앱을 포팅한 Next.js 웹버전 개발",
+      "- AWS lambda-GPT API를 활용한 AI 응답 생성",
+      "- PlayStore/Web 배포 및 운영중",
+    ],
+    stacks: [
+      ReactSVG,
+      ExpoSVG,
+      NextjsSVG,
+      TypescriptSVG,
+      ZustandSVG,
+      ThreejsSVG,
+      ReactHookFormSVG,
+    ],
+  },
+  {
+    id: 4,
+    summary: {
+      projectTitle: "라틴어 산책",
+      description: "데일리 라틴어 레터카드 서비스",
+    },
+    tasks: ["- 데일리 로컬 푸시 알림 구현", "- PlayStore/Web 배포 및 운영중"],
+    stacks: [ReactSVG, ExpoSVG, TypescriptSVG, ZustandSVG],
   },
 ];

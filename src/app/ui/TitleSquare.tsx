@@ -10,7 +10,7 @@ export const TitleSquare = ({ onClick }: TitleProps) => {
     <TitleContainer onClick={onClick}>
       <Name>Choi Beomseok | 최 범 석</Name>
       <StatusIcon src={PlantImage} alt="plant" />
-      <Job>Frontend Developer</Job>
+      <Job>Creative Developer</Job>
     </TitleContainer>
   );
 };

@@ -18,9 +18,7 @@ export const TaskDetail = ({
   const selectedProject = selectedCareer?.projects.find(
     (project) => project.id === selectedProjectId
   );
-  const articles = RESEARCH_DATA.filter(
-    (article) => article.projectId === selectedProjectId
-  );
+  const articles = selectedProject?.articles || [];
 
   const handleArticleClick = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
