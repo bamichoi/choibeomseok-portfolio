@@ -8,7 +8,7 @@ interface TitleProps {
 export const TitleSquare = ({ onClick }: TitleProps) => {
   return (
     <TitleContainer onClick={onClick}>
-      <Name>Choi Beomseok | 최 범 석</Name>
+      <Name>Choi Yujun | 최 유 준</Name>
       <StatusIcon src={PlantImage} alt="plant" />
       <Job>Creative Developer</Job>
     </TitleContainer>
