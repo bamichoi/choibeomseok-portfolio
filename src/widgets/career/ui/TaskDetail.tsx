@@ -1,5 +1,4 @@
 import { CAREER_DATA } from "@/entities/career";
-import { RESEARCH_DATA } from "@/entities/research";
 import styled from "styled-components";
 
 interface TaskDetailProps {
