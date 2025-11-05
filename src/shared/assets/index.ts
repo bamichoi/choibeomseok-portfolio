@@ -149,6 +149,8 @@ import DanjisenLogoImg from "./images/projectLogo/danjisen.png";
 import DanjisenFullLogoImg from "./images/projectLogo/danjisen_full.png";
 import LatinoWalkingLogoImg from "./images/projectLogo/latinoWalking.png";
 import LatinoWalkingFullLogoImg from "./images/projectLogo/latinoWalking_full.png";
+import BalletdiaryLogoImg from "./images/projectLogo/balletdiary.png";
+import BalletdiaryFullLogoImg from "./images/projectLogo/balletdiary_full.png";
 
 export const StagecueLogo = StagecueImg;
 export const StagecueFullLogo = StagecueFullImg;
@@ -170,6 +172,8 @@ export const DanjisenLogo = DanjisenLogoImg;
 export const DanjisenFullLogo = DanjisenFullLogoImg;
 export const LatinoWalkingLogo = LatinoWalkingLogoImg;
 export const LatinoWalkingFullLogo = LatinoWalkingFullLogoImg;
+export const BalletdiaryLogo = BalletdiaryLogoImg;
+export const BalletdiaryFullLogo = BalletdiaryFullLogoImg;
 
 // Career Logos
 import TmaxLogoImg from "./images/careerLogo/tmaxLogo.svg";

@@ -37,6 +37,8 @@ import {
   LatinoWalkingFullLogo,
   LatinoWalking2PNG,
   LatinoWalking1PNG,
+  BalletdiaryLogo,
+  BalletdiaryFullLogo,
 } from "@shared/assets";
 
 /* preview images */
@@ -87,11 +89,40 @@ import {
 
 export const PROJECTS: SideProject[] = [
   {
+    id: 12,
+    title: "Ballet Diary",
+    logo: BalletdiaryLogo,
+    fullLogo: BalletdiaryFullLogo,
+    subtitle: "취미발레인들을 위한 발레일기 앱",
+    appStoreUrl: "",
+    playStoreUrl: "",
+    images: [],
+    stacks: [
+      ReactSVG,
+      ExpoSVG,
+      TypescriptSVG,
+      ZustandSVG,
+      ReactQuerySVG,
+      ReactHookFormSVG,
+    ],
+    startDate: "2025.10",
+    endDate: "2025.11",
+    description:
+      "취미 발레인들을 위한 수업 스케줄 관리 및 발레일기 기록 앱입니다.",
+    tasks: [
+      "- FSD 아키텍처를 활용한 서비스 중심의 프로젝트 설계",
+      "- React Hook form-Zod를 활용한 Form관리 최적화",
+      "- Provider 및 AsyncStorage를 활용한 다크 모드 구현",
+      "- Revenue cat 을 활용한 인앱결제 구현",
+      "- PlayStore/AppStore 배포 및 운영중",
+    ],
+  },
+  {
     id: 11,
     title: "라틴어 산책",
     logo: LatinoWalkingLogo,
     fullLogo: LatinoWalkingFullLogo,
-    subtitle: "데일리 라틴어 레터카드 서비스",
+    subtitle: "데일리 라틴어 카드레터 서비스",
     appStoreUrl:
       "https://apps.apple.com/kr/app/%EB%9D%BC%ED%8B%B4%EC%96%B4-%EC%82%B0%EC%B1%85/id6753975649",
     playStoreUrl:

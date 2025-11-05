@@ -195,9 +195,31 @@ export const BLISS_PROJECTS = [
     id: 4,
     summary: {
       projectTitle: "라틴어 산책",
-      description: "데일리 라틴어 레터카드 서비스",
+      description: "데일리 라틴어 카드레터 서비스",
     },
     tasks: ["- 데일리 로컬 푸시 알림 구현", "- PlayStore/Web 배포 및 운영중"],
     stacks: [ReactSVG, ExpoSVG, TypescriptSVG, ZustandSVG],
+  },
+  {
+    id: 5,
+    summary: {
+      projectTitle: "Ballet Diary",
+      description: "취미발레인들을 위한 발레일기 앱",
+    },
+    tasks: [
+      "- FSD 아키텍처를 활용한 서비스 중심의 프로젝트 설계",
+      "- React Hook form-Zod를 활용한 Form관리 최적화",
+      "- Provider 및 AsyncStorage를 활용한 다크 모드 구현",
+      "- Revenue cat 을 활용한 인앱결제 구현",
+      "- PlayStore/AppStore 배포 및 운영중",
+    ],
+    stacks: [
+      ReactSVG,
+      ExpoSVG,
+      TypescriptSVG,
+      ZustandSVG,
+      ReactQuerySVG,
+      ReactHookFormSVG,
+    ],
   },
 ];
